@@ -133,19 +133,6 @@ on property:init.svc.vendor.per_mgr=running
 on property:sys.shutdown.requested=*
     stop vendor.per_proxy
 
-on property:vendor.vold.post_fs_data_done=1 && property:ro.debuggable=1
-   start vendor.wlan_logging
-
-on property:vendor.vold.post_fs_data_done=1 && property:persist.wlan.debug_log=1
-   start vendor.wlan_logging
-
-service vendor.wlan_logging /system/vendor/bin/cnss_diag -q -f -t HELIUM
-   class main
-   user system
-   group system wifi inet sdcard_rw media_rw diag
-   oneshot
-   disabled
-
 service dcvs-sh /vendor/bin/init.qti.dcvs.sh
     class late_start
     user root
