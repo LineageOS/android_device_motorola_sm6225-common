@@ -173,6 +173,9 @@ persist.vendor.ims.playout_delay=50
 persist.vendor.ims.vt.enableadb=1
 persist.vendor.rcs.singlereg.feature=1
 
+# Media
+debug.stagefright.c2inputsurface=-1
+
 # Netflix
 ro.netflix.bsp_rev=Q6115-31409-1
 
