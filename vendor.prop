@@ -227,9 +227,6 @@ ro.vendor.sensors.glance_approach=false
 ro.vendor.sensors.mot_ltv=true
 ro.vendor.sensors.pug=false
 
-# SSR
-persist.vendor.ssr.restart_level=ALL_ENABLE
-
 # USB
 vendor.usb.diag.func.name=diag
 vendor.usb.dpl.inst.name=dpl
