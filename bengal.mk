@@ -390,7 +390,6 @@ PRODUCT_PACKAGES += \
     init.mmi.dalvik.rc \
     init.mmi.debug.rc \
     init.mmi.rc \
-    init.qcom.factory.rc \
     init.qcom.rc \
     init.recovery.qcom.rc \
     init.target.rc \
