@@ -187,5 +187,8 @@ vendor.usb.use_ffs_mtp=0
 # Wifi
 wifi.aware.interface=wifi-aware0
 
+# Zygote
+zygote.critical_window.minute=10
+
 # Misc
 ro.netflix.bsp_rev=Q6115-31409-1
