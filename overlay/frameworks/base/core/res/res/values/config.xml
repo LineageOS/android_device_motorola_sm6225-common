@@ -215,7 +215,7 @@
         <item>/apex/com.android.art/javalib/core-oj.jar</item>
         <item>/apex/com.android.art/javalib/core-libart.jar</item>
         <item>/apex/com.android.media/javalib/updatable-media.jar</item>
-        <item>/system/lib64/libsurfaceflinger.so</item>
+        <item>/system/bin/surfaceflinger</item>
     </string-array>
 
     <!-- Indicates whether device has a power button fingerprint sensor. -->
