@@ -210,7 +210,6 @@ PRODUCT_PACKAGES += \
     libbatching \
     libgeofencing \
     libgnss \
-    libgnsspps \
     libloc_socket
 
 # GPS configs
