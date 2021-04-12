@@ -214,7 +214,6 @@ persist.vendor.radio.start_ota_daemon=1
 persist.vendor.radio.sw_mbn_update=0
 ril.subscription.types=RUIM
 ro.telephony.default_network=10,10
-ro.telephony.iwlan_operation_mode=legacy
 telephony.lteOnCdmaDevice=1
 
 # Sensors
