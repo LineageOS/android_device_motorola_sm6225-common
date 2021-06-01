@@ -455,8 +455,8 @@ vendor/bin/pm-service
 vendor/lib64/libperipheral_client.so
 
 # QTI configs
-etc/permissions/privapp-permissions-qti.xml
-etc/sysconfig/qti_whitelist.xml
+system/etc/permissions/privapp-permissions-qti.xml
+system/etc/sysconfig/qti_whitelist.xml
 system_ext/etc/sysconfig/qti_whitelist_system_ext.xml
 
 # Qualcomm MSM Interface
@@ -643,8 +643,8 @@ vendor/radio/qcril_database/upgrade/8_version_qcrildb.sql
 vendor/radio/qcril_database/upgrade/9_version_qcrildb.sql
 
 # Radio - Moto
-etc/permissions/moto-telephony.xml:system_ext/etc/permissions/moto-telephony.xml
-framework/moto-telephony.jar:system_ext/framework/moto-telephony.jar
+system/etc/permissions/moto-telephony.xml:system_ext/etc/permissions/moto-telephony.xml
+system/framework/moto-telephony.jar:system_ext/framework/moto-telephony.jar
 
 # Radio - IMS
 system_ext/app/ImsRcsService/ImsRcsService.apk
@@ -883,7 +883,7 @@ vendor/etc/wifi/aoa_cldb_falcon.bin
 vendor/etc/wifi/aoa_cldb_swl14.bin
 
 # WiFi Display
-framework/WfdCommon.jar
+system/framework/WfdCommon.jar
 system_ext/priv-app/WfdService/WfdService.apk
 
 # WiFi Display
