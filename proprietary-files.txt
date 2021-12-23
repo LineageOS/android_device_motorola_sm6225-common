@@ -684,8 +684,8 @@ vendor/radio/qcril_database/upgrade/8_version_qcrildb.sql
 vendor/radio/qcril_database/upgrade/9_version_qcrildb.sql
 
 # Radio - Moto
-etc/permissions/moto-telephony.xml
-framework/moto-telephony.jar
+etc/permissions/moto-telephony.xml:system_ext/etc/permissions/moto-telephony.xml
+framework/moto-telephony.jar:system_ext/framework/moto-telephony.jar
 
 # Radio - IMS
 -system_ext/app/ImsRcsService/ImsRcsService.apk
