@@ -15,6 +15,9 @@
 # Partition Mountpoints
 /(vendor|system/vendor)/fsg                             u:object_r:fsg_file:s0
 
+# Awinic
+/(mnt/vendor/persist|persist)/factory/audio/aw_cali.bin    u:object_r:vendor_persist_audio_file:s0
+
 # Camera
 /(mnt/vendor/persist|persist)/camera(/.*)?              u:object_r:vendor_persist_camera_file:s0
 /(vendor|system/vendor)/lib64/libipebpsstriping\.so     u:object_r:same_process_hal_file:s0
