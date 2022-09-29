@@ -28,9 +28,6 @@ TARGET_2ND_CPU_VARIANT := cortex-a9
 # Audio
 BOARD_SUPPORTS_OPENSOURCE_STHAL := true
 
-# Bluetooth
-BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(COMMON_PATH)/bluetooth/include
-
 # Bootloader
 TARGET_NO_BOOTLOADER := true
 
