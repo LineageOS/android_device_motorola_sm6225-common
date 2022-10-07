@@ -558,11 +558,13 @@ vendor/lib64/libqmiservices.so
 
 # Radio
 product/app/uimgbaservice/uimgbaservice.apk
+product/etc/permissions/telephony_product_privapp-permissions-qti.xml
 product/etc/permissions/UimGba.xml
 product/etc/permissions/UimGbaManager.xml
-product/etc/permissions/telephony_product_privapp-permissions-qti.xml
+product/etc/permissions/UimService.xml
 product/framework/uimgbalibrary.jar
 product/framework/uimgbamanagerlibrary.jar
+product/framework/uimservicelibrary.jar
 system_ext/app/atfwd/atfwd.apk
 system_ext/app/datastatusnotification/datastatusnotification.apk
 system_ext/app/QtiTelephonyService/QtiTelephonyService.apk
