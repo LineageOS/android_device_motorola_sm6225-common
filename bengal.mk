@@ -157,6 +157,7 @@ PRODUCT_PACKAGES += \
     memtrack.bengal
 
 PRODUCT_PACKAGES += \
+    init.qti.display_boot.sh \
     libdisplayconfig.qti \
     libdisplayconfig.system.qti \
     libqdMetaData \
