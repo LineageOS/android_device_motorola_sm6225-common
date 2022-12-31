@@ -5,3 +5,7 @@
 #
 
 COMMON_PATH := device/motorola/sm6225-common
+
+# Platform
+BOARD_USES_QCOM_HARDWARE := true
+TARGET_BOARD_PLATFORM := bengal
