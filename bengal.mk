@@ -9,6 +9,13 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota/launch_with_ven
 
 AB_OTA_UPDATER := true
 
+AB_OTA_PARTITIONS += \
+    boot \
+    product \
+    system \
+    system_ext \
+    vendor
+
 PRODUCT_PACKAGES += \
     update_engine \
     update_engine_sideload \
@@ -22,6 +29,10 @@ AB_OTA_POSTINSTALL_CONFIG += \
 
 PRODUCT_PACKAGES += \
     otapreopt_script
+
+# Partitions
+PRODUCT_BUILD_SUPER_PARTITION := false
+PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
 # Shipping API level
 BOARD_API_LEVEL := 30
