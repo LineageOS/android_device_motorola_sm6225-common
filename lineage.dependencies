@@ -1,1 +1,6 @@
-[]
+[
+  {
+    "repository": "android_kernel_motorola_sm6225",
+    "target_path": "kernel/motorola/sm6225"
+  }
+]
