@@ -24,9 +24,12 @@ TARGET_BOOTLOADER_BOARD_NAME := bengal
 TARGET_NO_BOOTLOADER := true
 
 # Kernel
+BOARD_BOOT_HEADER_VERSION := 3
+BOARD_INCLUDE_DTB_IN_BOOTIMG := true
 BOARD_KERNEL_BASE := 0x00000000
 BOARD_KERNEL_CMDLINE := console=ttyMSM0,115200n8 earlycon=msm_geni_serial,0x4a90000 androidboot.hardware=qcom androidboot.console=ttyMSM0 androidboot.memcg=1 lpm_levels.sleep_disabled=1 video=vfb:640x400,bpp=32,memsize=3072000 msm_rtb.filter=0x237 service_locator.enable=1 swiotlb=2048 loop.max_part=7
 BOARD_KERNEL_PAGESIZE := 4096
+BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOT_HEADER_VERSION)
 TARGET_KERNEL_CONFIG := vendor/bengal_defconfig
 TARGET_KERNEL_SOURCE := kernel/motorola/sm6225
 
@@ -39,6 +42,7 @@ BOARD_USES_METADATA_PARTITION := true
 
 BOARD_BOOTIMAGE_PARTITION_SIZE := 98304000
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 52983788000
+BOARD_VENDOR_BOOTIMAGE_PARTITION_SIZE := 98304000
 
 BOARD_SUPER_PARTITION_SIZE := 7405568000
 BOARD_SUPER_PARTITION_GROUPS := moto_dynamic_partitions
