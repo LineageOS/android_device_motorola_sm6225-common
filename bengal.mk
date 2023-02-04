@@ -52,7 +52,30 @@ PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
 # Rootdir
 PRODUCT_PACKAGES += \
-    init.recovery.qcom.rc
+    hardware_revisions.sh \
+    init.class_main.sh \
+    init.mdm.sh \
+    init.mmi.boot.sh \
+    init.mmi.laser.sh \
+    init.mmi.touch.sh \
+    init.oem.fingerprint2.sh \
+    init.oem.hw.sh \
+    init.qcom.early_boot.sh \
+    init.qcom.post_boot.sh \
+    init.qcom.sh \
+    init.qti.dcvs.sh \
+    init.qti.early_init.sh \
+    fstab.qcom \
+    init.mmi.charge_only.rc \
+    init.mmi.chipset.rc \
+    init.mmi.debug.rc \
+    init.mmi.overlay.rc \
+    init.mmi.rc \
+    init.qcom.factory.rc \
+    init.qcom.rc \
+    init.recovery.qcom.rc \
+    init.target.rc \
+    ueventd.qcom.rc \
 
 # Shipping API level
 BOARD_API_LEVEL := 30

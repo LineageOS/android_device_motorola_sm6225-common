@@ -1,0 +1,13 @@
+# Charge only mode configuration
+import /vendor/etc/init/hw/init.mmi.charge_only.rc
+
+on early-init
+    exec u:r:vendor_modprobe:s0 -- /vendor/bin/modprobe -a -d /vendor/lib/modules exfat
+
+on property:ro.vendor.build.motfactory=1
+    write /sys/class/power_supply/battery/device/factory_image_mode 1
+    wait /sys/class/power_supply/battery/device/force_charger_suspend
+    chown system system /sys/class/power_supply/battery/device/force_charger_suspend
+
+on property:ro.build.type=userdebug
+    setprop persist.vendor.qg.log_level 1
