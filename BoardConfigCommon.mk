@@ -28,6 +28,9 @@ TARGET_FS_CONFIG_GEN := \
     $(COMMON_PATH)/config.fs \
     $(COMMON_PATH)/mot_aids.fs
 
+# HIDL
+DEVICE_MATRIX_FILE := $(COMMON_PATH)/compatibility_matrix.xml
+
 # Kernel
 BOARD_BOOT_HEADER_VERSION := 3
 BOARD_INCLUDE_DTB_IN_BOOTIMG := true
