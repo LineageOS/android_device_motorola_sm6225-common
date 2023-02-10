@@ -1,0 +1,16 @@
+# Audio
+af.fast_track_multiplier=1
+audio.deep_buffer.media=true
+ro.af.client_heap_size_kbyte=7168
+media.stagefright.audio.deep=false
+aaudio.mmap_policy=2
+aaudio.mmap_exclusive_policy=2
+aaudio.hw_burst_min_usec=2000
+
+# One-Handed mode
+ro.support_one_handed_mode=true
+
+# Radio
+ro.telephony.default_network=10,10
+ro.vendor.radio.imei.sv=4
+ril.subscription.types=RUIM
