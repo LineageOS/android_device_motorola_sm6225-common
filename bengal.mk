@@ -45,6 +45,24 @@ PRODUCT_PACKAGES += \
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 
+# Audio
+PRODUCT_PACKAGES += \
+    audio.bluetooth.default \
+    audio.primary.bengal \
+    audio.r_submix.default \
+    audio.usb.default \
+    sound_trigger.primary.bengal
+
+PRODUCT_PACKAGES += \
+    android.hardware.audio@6.0-impl \
+    android.hardware.audio.effect@6.0-impl \
+    android.hardware.audio.service \
+    android.hardware.bluetooth.audio@2.0-impl \
+    android.hardware.soundtrigger@2.3-impl
+
+PRODUCT_PACKAGES += \
+    libqcomvoiceprocessing
+
 # Audio - Configs
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/audio_effects.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects.xml \
