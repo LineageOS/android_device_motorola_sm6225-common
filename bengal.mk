@@ -347,6 +347,10 @@ PRODUCT_PACKAGES += \
     android.hardware.sensors@2.0-service.multihal \
     libsensorndkbridge
 
+# Service Tracker
+PRODUCT_PACKAGES += \
+    vendor.qti.hardware.servicetracker@1.2.vendor
+
 # Shipping API level
 BOARD_API_LEVEL := 30
 BOARD_SHIPPING_API_LEVEL := 30
