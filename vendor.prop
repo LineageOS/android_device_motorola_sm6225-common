@@ -6,12 +6,38 @@ persist.vendor.audio.fluence.voicerec=false
 persist.vendor.audio.fluence.speaker=false
 ro.config.vc_call_vol_steps=8
 vendor.audio.snd_card.open.retries=50
-vendor.audio.feature.afe_proxy.enable=true
 vendor.audio_hal.period_size=240
 vendor.audio.parser.ip.buffer.size=262144
 vendor.audio.use.sw.alac.decoder=false
 vendor.audio.use.sw.ape.decoder=false
+
+# Audio - features
+vendor.audio.feature.a2dp_offload.enable=true
+vendor.audio.feature.afe_proxy.enable=true
+vendor.audio.feature.anc_headset.enable=true
+vendor.audio.feature.battery_listener.enable=true
+vendor.audio.feature.compress_in.enable=true
+vendor.audio.feature.compress_meta_data.enable=true
+vendor.audio.feature.concurrent_capture.enable=true
+vendor.audio.feature.custom_stereo.enable=true
+vendor.audio.feature.display_port.enable=true
+vendor.audio.feature.dynamic_ecns.enable=true
+vendor.audio.feature.fluence.enable=true
+vendor.audio.feature.fm.enable=true
+vendor.audio.feature.hdmi_edid.enable=true
+vendor.audio.feature.hdmi_passthrough.enable=true
+vendor.audio.feature.hfp.enable=true
+vendor.audio.feature.incall_music.enable=true
 vendor.audio.feature.multi_voice_session.enable=true
+vendor.audio.feature.keep_alive.enable=true
+vendor.audio.feature.kpi_optimize.enable=true
+vendor.audio.feature.ras.enable=true
+vendor.audio.feature.src_trkn.enable=true
+vendor.audio.feature.ssrec.enable=true
+vendor.audio.feature.usb_offload.enable=true
+vendor.audio.feature.usb_offload_burst_mode.enable=true
+vendor.audio.feature.vbat.enable=true
+vendor.audio.feature.snd_mon.enable=true
 
 # Bluetooth
 ro.bluetooth.a2dp_offload.supported=true
