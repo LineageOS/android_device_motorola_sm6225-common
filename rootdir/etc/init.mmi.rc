@@ -209,12 +209,6 @@ on post-fs-data
     chown vendor_pwric vendor_pwric /sys/class/power_supply/wireless/voltage_now
     chown vendor_pwric vendor_pwric /sys/class/power_supply/wireless/voltage_max
     chmod 0664 /sys/class/power_supply/wireless/voltage_max
-    chown vendor_pwric vendor_pwric /sys/kernel/debug/pmic-votable/CHG_DISABLE/force_val
-    chmod 0664 /sys/kernel/debug/pmic-votable/CHG_DISABLE/force_val
-    chown vendor_pwric vendor_pwric /sys/kernel/debug/pmic-votable/CHG_DISABLE/force_active
-    chmod 0664 /sys/kernel/debug/pmic-votable/CHG_DISABLE/force_active
-    chown vendor_pwric vendor_pwric /sys/kernel/debug/regulator/smb5-vconn/enable
-    chmod 0664 /sys/kernel/debug/regulator/smb5-vconn/enable
 
     chown root vendor_mod /sys/module/qpnp_smbcharger_mmi/parameters/eb_rechrg_start_soc
     chown root vendor_mod /sys/module/qpnp_smbcharger_mmi/parameters/eb_rechrg_stop_soc
