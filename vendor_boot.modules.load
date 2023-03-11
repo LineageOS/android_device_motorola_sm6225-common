@@ -1,0 +1,14 @@
+mmi_info.ko
+mmi_annotate.ko
+sgm4154x_charger.ko
+bq2589x_charger.ko
+mmi_charger.ko
+mmi_discrete_charger_class.ko
+mmi_discrete_charger.ko
+qpnp_adaptive_charge.ko
+tcpc_class.ko
+cw2217b_fg_mmi.ko
+sm5602_fg_mmi.ko
+adapter_class.ko
+tcpc_sgm7220.ko
+rt_pd_manager.ko
