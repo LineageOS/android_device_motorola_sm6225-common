@@ -228,4 +228,7 @@
         <item>/system/lib64/libsurfaceflinger.so</item>
     </string-array>
 
+    <!-- Indicates whether device has a power button fingerprint sensor. -->
+    <bool name="config_is_powerbutton_fps" translatable="false">true</bool>
+
 </resources>
