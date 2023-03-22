@@ -59,7 +59,6 @@ PRODUCT_PACKAGES += \
 # Audio
 PRODUCT_PACKAGES += \
     audio.bluetooth.default \
-    audio.primary.bengal \
     audio.r_submix.default \
     audio.usb.default \
     sound_trigger.primary.bengal

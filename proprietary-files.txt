@@ -56,6 +56,12 @@ vendor/lib/libsurround_3mic_proc.so
 vendor/lib/soundfx/libmmieffectswrapper.so
 vendor/lib/soundfx/libspeakerbundle.so
 
+# Audio Hardware
+vendor/lib/hw/audio.primary.bengal.so
+vendor/lib/vndk/libtinyalsa.so
+vendor/lib/libmotaudioutils.so
+vendor/lib/libtinycompress_vendor.so
+
 # Bluetooth
 vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti
 vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc
