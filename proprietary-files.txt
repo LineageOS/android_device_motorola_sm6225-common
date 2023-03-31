@@ -1,4 +1,4 @@
-# All unpinned blobs below are extracted from hawao_g S2SE32.28-41-1
+# All unpinned blobs below are extracted from hawao_g S2SES32.28-70-3
 
 # ADSP
 vendor/bin/adsprpcd
