@@ -459,6 +459,22 @@ vendor/lib64/unnhal-acc-adreno.so
 vendor/lib64/unnhal-acc-common.so
 vendor/lib64/unnhal-acc-hvx.so
 
+# NFC (NXP)
+vendor/etc/init/android.hardware.nfc@1.2-service.rc
+vendor/lib64/libpn557_fw.so
+
+# NFC (Samsung)
+system_ext/etc/nfcee_access.xml
+vendor/bin/hw/android.hardware.nfc@1.2-service.sec
+vendor/etc/init/android.hardware.nfc@1.2-service.sec.rc
+vendor/etc/init/init.nfc.sec.rc
+vendor/etc/sec_s3nrn4v_hwreg.bin
+vendor/etc/sec_s3nrn4v_swreg.bin
+vendor/lib64/nfc_nci_sec.so
+
+# NFC Firmware (Samsung)
+vendor/firmware/sec_s3nrn4v_firmware.bin
+
 # OEM
 vendor/bin/motobox
 vendor/etc/vhw.xml
