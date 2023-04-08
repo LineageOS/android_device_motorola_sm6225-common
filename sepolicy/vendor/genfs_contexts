@@ -26,3 +26,6 @@ genfscon sysfs /class/touchscreen                                               
 # USB
 genfscon sysfs /devices/platform/soc/soc:mmi,discrete-charging/power_supply/pc_port     u:object_r:vendor_sysfs_usb_supply:s0
 genfscon sysfs /devices/platform/soc/soc:mmi,discrete-charging/power_supply/usb         u:object_r:vendor_sysfs_usb_supply:s0
+
+# Vibrator
+genfscon sysfs /devices/platform/soc/soc:ext_vib/leds/vibrator                  u:object_r:sysfs_leds:s0
