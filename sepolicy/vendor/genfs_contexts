@@ -29,3 +29,36 @@ genfscon sysfs /devices/platform/soc/soc:mmi,discrete-charging/power_supply/usb 
 
 # Vibrator
 genfscon sysfs /devices/platform/soc/soc:ext_vib/leds/vibrator                  u:object_r:sysfs_leds:s0
+
+# Wakeup
+genfscon sysfs /devices/platform/soc/4a84000.i2c/i2c-1/1-003b/power_supply/charger/wakeup30        u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/4a80000.i2c/i2c-0/0-0064/power_supply/bms/wakeup35            u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/4a84000.i2c/i2c-1/1-0047/wakeup                               u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/4a84000.i2c/i2c-1/1-0047/tcpc/type_c_port0/wakeup42           u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/4a84000.i2c/i2c-1/1-0047/tcpc/type_c_port0/wakeup43           u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/4a84000.i2c/i2c-1/1-0047/tcpc/type_c_port0/wakeup44           u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/4a84000.i2c/i2c-1/1-0047/tcpc/type_c_port0/dual-role-type_c_port0/wakeup45   u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/4a88000.i2c/i2c-2/2-0038/wakeup                               u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/soc:et528/wakeup                                              u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/soc:mmi,charger/wakeup                                        u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/soc:mmi,charger/power_supply/mmi_battery/wakeup33             u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/soc:mmi,discrete-charging/power_supply/battery/wakeup36       u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/soc:mmi,discrete-charging/power_supply/usb/wakeup37           u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/soc:mmi,discrete-charging/power_supply/pc_port/wakeup38       u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/soc:mmi,discrete-charging/power_supply/dc/wakeup39            u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/soc:mmi,discrete-charging/wakeup                              u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/virtual/diag/diag/wakeup22                                                 u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/virtual/misc/msm_aac/wakeup47                                              u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/virtual/misc/msm_alac/wakeup48                                             u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/virtual/misc/msm_amrnb/wakeup49                                            u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/virtual/misc/msm_amrwb/wakeup50                                            u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/virtual/misc/msm_amrwbplus/wakeup51                                        u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/virtual/misc/msm_ape/wakeup52                                              u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/virtual/misc/msm_evrc/wakeup53                                             u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/virtual/misc/msm_g711alaw/wakeup54                                         u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/virtual/misc/msm_g711mlaw/wakeup55                                         u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/virtual/misc/msm_mp3/wakeup56                                              u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/virtual/misc/msm_multi_aac/wakeup57                                        u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/virtual/misc/msm_qcelp/wakeup58                                            u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/virtual/misc/msm_wma/wakeup59                                              u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/virtual/misc/msm_wmapro/wakeup60                                           u:object_r:sysfs_wakeup:s0
