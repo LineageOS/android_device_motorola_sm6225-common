@@ -1,4 +1,5 @@
 allow hal_fingerprint_default {
+  fpsensor_device
   etsd_device
   tee_device
 }: chr_file rw_file_perms;
