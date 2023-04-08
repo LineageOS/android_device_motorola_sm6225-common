@@ -1,0 +1,17 @@
+# Camera
+genfscon sysfs /devices/platform/cam_sync/video4linux/video1/name               u:object_r:sysfs_graphics:s0
+
+# Input Devices
+genfscon sysfs /devices/virtual/input                                           u:object_r:vendor_sysfs_input:s0
+
+# Motorola
+genfscon proc /bootinfo                                                         u:object_r:proc_moto_boot:s0
+genfscon proc /config                                                           u:object_r:vendor_proc_hw:s0
+genfscon proc /hw                                                               u:object_r:vendor_proc_hw:s0
+
+# PowerHal
+genfscon proc /sys/kernel/sched_lib_name                                        u:object_r:proc_sched_lib_mask_cpuinfo:s0
+genfscon proc /sys/kernel/sched_lib_mask_force                                  u:object_r:proc_sched_lib_mask_cpuinfo:s0
+
+# Touchscreen
+genfscon sysfs /class/touchscreen                                               u:object_r:vendor_sysfs_touchpanel:s0
