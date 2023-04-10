@@ -189,5 +189,3 @@ wifi.aware.interface=wifi-aware0
 
 # Misc
 ro.netflix.bsp_rev=Q6115-31409-1
-persist.vendor.qc.sub.rdump.on=1
-persist.vendor.qc.sub.rdump.max=0
