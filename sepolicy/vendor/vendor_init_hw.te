@@ -11,6 +11,9 @@ allow vendor_init_hw vendor_proc_hw:file rw_file_perms;
 allow vendor_init_hw vendor_motobox_exec:file rx_file_perms;
 allow vendor_init_hw vendor_toolbox_exec:file rx_file_perms;
 
+# Logs to /dev/kmsg
+allow vendor_init_hw kmsg_device:chr_file w_file_perms;
+
 set_prop(vendor_init_hw, vendor_mot_hw_prop)
 set_prop(vendor_init_hw, vendor_mot_touch_prop)
 set_prop(vendor_init_hw, vendor_radio_prop)

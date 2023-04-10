@@ -14,3 +14,6 @@ allow vendor_mmi_laser vendor_persist_camera_file:dir search;
 allow vendor_mmi_laser vendor_persist_camera_file:file { setattr r_file_perms };
 
 allow vendor_mmi_laser vendor_toolbox_exec:file rx_file_perms;
+
+# Logs to /dev/kmsg
+allow vendor_mmi_laser kmsg_device:chr_file w_file_perms;
