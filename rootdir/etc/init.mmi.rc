@@ -645,9 +645,3 @@ on property:persist.sys.locale=*
 # IKSWQ-149109: Force shutter tone on Japan softbank carrier
 on property:ro.carrier=softbank
     setprop audio.camerasound.force true
-
-on property:ro.sys.force_max_chrg_temp=*
-    write /sys/class/power_supply/battery/device/force_max_chrg_temp ${ro.sys.force_max_chrg_temp}
-
-on property:ro.sys.force_demo_mode=*
-    write /sys/class/power_supply/battery/device/force_demo_mode ${ro.sys.force_demo_mode}
