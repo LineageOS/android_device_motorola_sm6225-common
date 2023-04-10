@@ -15,6 +15,7 @@ genfscon sysfs /devices/virtual/input                                           
 genfscon proc /bootinfo                                                         u:object_r:proc_moto_boot:s0
 genfscon proc /config                                                           u:object_r:vendor_proc_hw:s0
 genfscon proc /hw                                                               u:object_r:vendor_proc_hw:s0
+genfscon sysfs /firmware/devicetree/base/chosen/mmi                             u:object_r:vendor_sysfs_devicetree_mmi:s0
 
 # PowerHal
 genfscon proc /sys/kernel/sched_lib_name                                        u:object_r:proc_sched_lib_mask_cpuinfo:s0
