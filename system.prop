@@ -1,6 +1,3 @@
-# Bluetooth
-ro.bluetooth.library_name=libbluetooth_qti.so
-
 # Bringup properties
 persist.vendor.radio.atfwd.start=true
 qemu.hw.mainkeys=0
