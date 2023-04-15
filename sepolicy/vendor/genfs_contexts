@@ -1,6 +1,10 @@
 # Camera
 genfscon sysfs /devices/platform/cam_sync/video4linux/video1/name               u:object_r:sysfs_graphics:s0
 
+# Extcon
+genfscon sysfs /devices/platform/soc/soc:mmi,discrete-charging/extcon           u:object_r:sysfs_extcon:s0
+genfscon sysfs /devices/platform/soc/soc:rt-pd-manager/extcon                   u:object_r:sysfs_extcon:s0
+
 # Health
 genfscon sysfs /devices/platform/soc/4a84000.i2c/i2c-1/1-003b/power_supply/charger      u:object_r:vendor_sysfs_battery_supply:s0
 genfscon sysfs /devices/platform/soc/4a80000.i2c/i2c-0/0-0064/power_supply/bms          u:object_r:vendor_sysfs_battery_supply:s0
