@@ -50,6 +50,9 @@ ro.vendor.qti.va_aosp.support=1
 rild.libpath=/vendor/lib64/libril-qc-hal-qmi.so
 telephony.lteOnCdmaDevice=1
 
+# WFD
+persist.debug.wfd.enable=1
+
 # Misc
 arm64.memtag.process.system_server=off
 ro.launcher.blur.appLaunch=0
