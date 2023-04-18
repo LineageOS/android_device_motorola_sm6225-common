@@ -260,9 +260,6 @@ on post-fs-data
     # folder for ssrdumps
     mkdir /data/vendor/ssrdump 0775 root system
 
-    #Folder for hardware properties
-    mkdir /data/vendor/hardware_revisions 0755 system system
-
     # Imager tuning data for camera subsystem
     mkdir /data/vendor/misc/imager 0771 camera camera
 
@@ -471,12 +468,6 @@ service vendor.mbm_spy /vendor/bin/mbm_spy
 
 on property:sys.boot_completed=1
     start vendor.mbm_spy
-
-service vendor.hw_revs /vendor/bin/hardware_revisions.sh
-   class late_start
-   user system
-   group system
-   oneshot
 
 service vendor.mmi-touch-sh /vendor/bin/init.mmi.touch.sh
     class core

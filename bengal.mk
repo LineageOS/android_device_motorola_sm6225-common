@@ -337,7 +337,6 @@ PRODUCT_PACKAGES += \
 
 # Rootdir
 PRODUCT_PACKAGES += \
-    hardware_revisions.sh \
     init.class_main.sh \
     init.mdm.sh \
     init.mmi.boot.sh \
