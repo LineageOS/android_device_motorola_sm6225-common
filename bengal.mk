@@ -70,7 +70,24 @@ PRODUCT_PACKAGES += \
     android.hardware.soundtrigger@2.3-impl
 
 PRODUCT_PACKAGES += \
-    libqcomvoiceprocessing
+    liba2dpoffload \
+    libbatterylistener \
+    libcomprcapture \
+    libexthwplugin \
+    libhdmiedid \
+    libhfp \
+    libsndmonitor \
+    libspkrprot
+
+PRODUCT_PACKAGES += \
+    libbundlewrapper \
+    libdownmix \
+    libdynproc \
+    libeffectproxy \
+    libldnhncr \
+    libqcomvoiceprocessing \
+    libreverbwrapper \
+    libvisualizer
 
 # Audio - Configs
 PRODUCT_COPY_FILES += \
