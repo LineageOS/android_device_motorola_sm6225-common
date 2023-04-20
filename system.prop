@@ -13,10 +13,6 @@ persist.vendor.data.mode=concurrent
 debug.sf.enable_hwc_vds=1
 debug.sf.latch_unsignaled=1
 
-# IORAPD
-persist.device_config.runtime_native_boot.iorap_perfetto_enable=true
-ro.iorapd.enable=true
-
 # Media
 media.stagefright.thumbnail.prefer_hw_codecs=true
 media.settings.xml=/vendor/etc/media_profiles_vendor.xml
