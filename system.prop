@@ -3,23 +3,18 @@ ro.charger.enable_suspend=1
 
 # Data
 persist.vendor.data.mode=concurrent
-ro.vendor.use_data_netmgrd=true
 
 # Display
 debug.sf.enable_hwc_vds=1
-debug.sf.latch_unsignaled=1
 
 # Media
-debug.stagefright.ccodec=1
 media.settings.xml=/vendor/etc/media_profiles_vendor.xml
-media.stagefright.thumbnail.prefer_hw_codecs=true
 ro.media.recorder-max-base-layer-fps=60
 
 # QVA
 ro.vendor.qti.va_aosp.support=1
 
 # Radio
-rild.libpath=/vendor/lib64/libril-qc-hal-qmi.so
 telephony.lteOnCdmaDevice=1
 
 # System Server

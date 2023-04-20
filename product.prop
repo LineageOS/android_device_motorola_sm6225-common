@@ -4,13 +4,12 @@ aaudio.mmap_exclusive_policy=2
 aaudio.mmap_policy=2
 af.fast_track_multiplier=1
 audio.deep_buffer.media=true
-media.stagefright.audio.deep=false
 ro.af.client_heap_size_kbyte=7168
-
-# One-Handed mode
-ro.support_one_handed_mode=true
 
 # Radio
 ril.subscription.types=RUIM
 ro.telephony.default_network=10,10
-ro.vendor.radio.imei.sv=4
+ro.vendor.radio.imei.sv=7
+
+# Voice assistant
+ro.opa.eligible_device=true
