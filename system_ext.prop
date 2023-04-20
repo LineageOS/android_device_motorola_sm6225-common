@@ -1,5 +1,5 @@
-# Audio
-audio.offload.min.duration.secs=60
-
 # DPM
 persist.vendor.dpm.feature=11
+
+# QVA
+ro.vendor.qti.va_aosp.support=1
