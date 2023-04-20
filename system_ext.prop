@@ -1,8 +1,8 @@
 # Audio
 audio.offload.disable=false
-audio.offload.video=false
-audio.offload.min.duration.secs=60
 audio.offload.gapless.enabled=false
+audio.offload.min.duration.secs=60
+audio.offload.video=false
 media.recorder.show_manufacturer_and_model=true
 
 # DPM
