@@ -238,7 +238,6 @@ vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service-ets
 vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service-chipone2.rc
 vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service-ets2.rc
 vendor/etc/init/init.ets.rc
-vendor/lib64/com.motorola.hardware.biometric.fingerprint@1.0.so
 vendor/lib64/hw/chipone.fingerprint.default.so
 vendor/lib64/libets_teeclient_v2.so
 vendor/lib64/libRbsFlow.so
