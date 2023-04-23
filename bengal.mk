@@ -77,7 +77,8 @@ PRODUCT_PACKAGES += \
     libhdmiedid \
     libhfp \
     libsndmonitor \
-    libspkrprot
+    libspkrprot \
+    libssrec
 
 PRODUCT_PACKAGES += \
     libaudiopreprocessing \
