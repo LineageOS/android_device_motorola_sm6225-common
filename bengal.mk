@@ -80,14 +80,18 @@ PRODUCT_PACKAGES += \
     libspkrprot
 
 PRODUCT_PACKAGES += \
+    libaudiopreprocessing \
     libbundlewrapper \
     libdownmix \
     libdynproc \
     libeffectproxy \
     libldnhncr \
+    libqcompostprocbundle \
+    libqcomvisualizer \
     libqcomvoiceprocessing \
     libreverbwrapper \
-    libvisualizer
+    libvisualizer \
+    libvolumelistener
 
 # Audio - Configs
 PRODUCT_COPY_FILES += \
