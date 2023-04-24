@@ -1,4 +1,4 @@
-# All unpinned blobs below are extracted from hawao_g S2SES32.28-70-3
+# All unpinned blobs below are extracted from devon_g S2SN32.34-72-12
 
 # ADSP
 vendor/bin/adsprpcd
@@ -659,6 +659,8 @@ vendor/radio/qcril_database/upgrade/35_version_qcrildb.sql
 vendor/radio/qcril_database/upgrade/36_version_qcrildb.sql
 vendor/radio/qcril_database/upgrade/37_version_qcrildb.sql
 vendor/radio/qcril_database/upgrade/38_version_qcrildb.sql
+vendor/radio/qcril_database/upgrade/39_version_qcrildb.sql
+vendor/radio/qcril_database/upgrade/41_version_qcrildb.sql
 vendor/radio/qcril_database/upgrade/3_version_qcrildb.sql
 vendor/radio/qcril_database/upgrade/4_version_qcrildb.sql
 vendor/radio/qcril_database/upgrade/5_version_qcrildb.sql
