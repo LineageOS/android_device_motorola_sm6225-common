@@ -231,18 +231,6 @@ vendor/lib64/liboemcrypto.so
 vendor/lib64/libtrustedapploader.so
 vendor/lib64/libwvhidl.so
 
-# Fingerprint
-vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service-chipone
-vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service-ets
-vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service-chipone2.rc
-vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service-ets2.rc
-vendor/etc/init/init.ets.rc
-vendor/lib64/hw/chipone.fingerprint.default.so
-vendor/lib64/libets_teeclient_v2.so
-vendor/lib64/libRbsFlow.so
-vendor/lib64/vendor.egistec.hardware.fingerprint@4.0.so
-vendor/lib64/vendor.qti.hardware.fingerprint@1.0.so
-
 # Gatekeeper
 vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti
 vendor/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc
