@@ -368,7 +368,6 @@ PRODUCT_PACKAGES += \
     init.mmi.boot.sh \
     init.mmi.laser.sh \
     init.mmi.touch.sh \
-    init.oem.fingerprint2.sh \
     init.oem.hw.sh \
     init.qcom.early_boot.sh \
     init.qcom.post_boot.sh \
@@ -379,7 +378,6 @@ PRODUCT_PACKAGES += \
     init.mmi.charge_only.rc \
     init.mmi.chipset.rc \
     init.mmi.debug.rc \
-    init.mmi.overlay.rc \
     init.mmi.rc \
     init.qcom.factory.rc \
     init.qcom.rc \
