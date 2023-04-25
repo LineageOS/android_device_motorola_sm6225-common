@@ -249,4 +249,88 @@
         <item>26</item>
     </integer-array>
 
+    <!-- Array of output values for LCD backlight corresponding to the lux values
+         in the config_autoBrightnessLevels array.  This array should have size one greater
+         than the size of the config_autoBrightnessLevels array.
+         The brightness values must be between 0 and 255 and be non-decreasing.
+         This must be overridden in platform specific overlays -->
+    <integer-array name="config_autoBrightnessLcdBacklightValues">
+        <item>10</item>
+        <item>20</item>
+        <item>40</item>
+        <item>70</item>
+        <item>110</item>
+        <item>160</item>
+        <item>200</item>
+        <item>255</item>
+    </integer-array>
+
+    <!-- Indicate available ColorDisplayManager.COLOR_MODE_xxx. -->
+    <integer-array name="config_availableColorModes">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </integer-array>
+
+    <!-- List of biometric sensors on the device, in decreasing strength. Consumed by AuthService
+     when registering authenticators with BiometricService. Format must be ID:Modality:Strength,
+     where: IDs are unique per device, Modality as defined in BiometricAuthenticator.java,
+     and Strength as defined in Authenticators.java -->
+    <string-array name="config_biometric_sensors" translatable="false" >
+        <item>0:2:15</item> <!-- ID0:Fingerprint:Strong -->
+    </string-array>
+
+    <!-- Array of OEM specific USB mode override config.
+         OEM can override a certain USB mode depending on ro.bootmode.
+         Specify an array of below items to set override rule.
+         [bootmode]:[original USB mode]:[USB mode used]-->
+    <string-array translatable="false" name="config_oemUsbModeOverride">
+        <item>bp-tools:mtp:diag,serial,rmnet:mtp</item>
+        <item>bp-tools:mtp,adb:diag,serial,rmnet,adb:mtp,adb</item>
+        <item>bp-tools:adb:diag,serial,rmnet,adb:adb</item>
+        <item>bp-tools:ptp:diag,serial,rmnet:ptp</item>
+        <item>bp-tools:ptp,adb:diag,serial,rmnet,adb:ptp,adb</item>
+        <item>bp-tools:rndis:rndis,diag,serial:mtp</item>
+        <item>bp-tools:rndis,adb:rndis,diag,serial,adb:mtp,adb</item>
+        <item>qcom:adb:diag,serial_cdev,rmnet,adb:adb</item>
+        <item>qcom:mtp:diag,serial_cdev,rmnet:mtp</item>
+        <item>qcom:mtp,adb:diag,serial_cdev,rmnet,adb:mtp,adb</item>
+        <item>qcom:ptp:diag,serial_cdev,rmnet:ptp</item>
+        <item>qcom:ptp,adb:diag,serial_cdev,rmnet,adb:ptp,adb</item>
+        <item>mot-factory:mtp:usbnet:mtp</item>
+        <item>mot-factory:mtp,adb:usbnet,adb:mtp,adb</item>
+        <item>mot-factory:adb:usbnet,adb:adb</item>
+    </string-array>
+
+    <!-- Stability requirements in milliseconds for accepting a new brightness level.  This is used
+         for debouncing the light sensor.  Different constants are used to debounce the light sensor
+         when adapting to brighter or darker environments.  This parameter controls how quickly
+         brightness changes occur in response to an observed change in light level that exceeds the
+         hysteresis threshold. -->
+    <integer name="config_autoBrightnessBrighteningLightDebounce">500</integer>
+    <integer name="config_autoBrightnessDarkeningLightDebounce">500</integer>
+
+    <!-- The default refresh rate for a given device. Change this value to set a higher default
+         refresh rate. If the hardware composer on the device supports display modes with a higher
+         refresh rate than the default value specified here, the framework may use those higher
+         refresh rate modes if an app chooses one by setting preferredDisplayModeId or calling
+         setFrameRate().
+         If a non-zero value is set for config_defaultPeakRefreshRate, then
+         config_defaultRefreshRate may be set to 0, in which case the value set for
+         config_defaultPeakRefreshRate will act as the default frame rate. -->
+    <integer name="config_defaultRefreshRate">0</integer>
+
+    <!-- Minimum allowable screen brightness to use in a very dark room.
+         This value sets the floor for the darkest possible auto-brightness
+         adjustment.  It is expected to be somewhat less than the first entry in
+         config_autoBrightnessLcdBacklightValues so as to allow the user to have
+         some range of adjustment to dim the screen further than usual in very
+         dark rooms. The contents of the screen must still be clearly visible
+         in darkness (although they may not be visible in a bright room). -->
+    <integer name="config_screenBrightnessDark">2</integer>
+
+    <!-- Safe USB headset gain. This value is used to ensure that the SPL on the USB
+    headset output is compliant to EN 60950 requirements for portable music players. -->
+    <integer name="config_safe_media_volume_usb_mB">-1500</integer>
+
 </resources>
