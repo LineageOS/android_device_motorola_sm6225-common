@@ -40,6 +40,7 @@ genfscon sysfs /devices/platform/soc/soc:mmi,discrete-charging/power_supply/usb 
 
 # Vibrator
 genfscon sysfs /devices/platform/soc/soc:ext_vib/leds/vibrator                  u:object_r:sysfs_leds:s0
+genfscon sysfs /devices/platform/soc/soc:ldo_vib/leds/vibrator                  u:object_r:sysfs_leds:s0
 
 # Wakeup
 genfscon sysfs /devices/platform/soc/4a80000.i2c/i2c-0/0-0064/power_supply/bms/wakeup                            u:object_r:sysfs_wakeup:s0
