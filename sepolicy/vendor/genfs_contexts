@@ -27,8 +27,8 @@ genfscon proc /hw                                                               
 genfscon sysfs /firmware/devicetree/base/chosen/mmi                             u:object_r:vendor_sysfs_devicetree_mmi:s0
 
 # PowerHal
-genfscon proc /sys/kernel/sched_lib_name                                        u:object_r:proc_sched_lib_mask_cpuinfo:s0
 genfscon proc /sys/kernel/sched_lib_mask_force                                  u:object_r:proc_sched_lib_mask_cpuinfo:s0
+genfscon proc /sys/kernel/sched_lib_name                                        u:object_r:proc_sched_lib_mask_cpuinfo:s0
 
 # Touchscreen
 genfscon sysfs /class/touchscreen                                                   u:object_r:vendor_sysfs_touchpanel:s0
