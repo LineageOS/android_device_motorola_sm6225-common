@@ -370,7 +370,6 @@ PRODUCT_PACKAGES += \
     init.qcom.sh \
     init.qti.dcvs.sh \
     init.qti.early_init.sh \
-    fstab.qcom \
     init.mmi.charge_only.rc \
     init.mmi.chipset.rc \
     init.mmi.debug.rc \
