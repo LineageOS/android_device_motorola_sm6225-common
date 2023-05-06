@@ -1,4 +1,9 @@
 # A/B partitions
+/dev/block/platform/soc/4744000\.sdhci/by-name/fsg_[ab]         u:object_r:vendor_modem_efs_partition_device:s0
+/dev/block/platform/soc/4744000\.sdhci/by-name/logo_[ab]        u:object_r:vendor_custom_ab_block_device:s0
+/dev/block/platform/soc/4744000\.sdhci/by-name/prov_[ab]        u:object_r:vendor_custom_ab_block_device:s0
+/dev/block/platform/soc/4744000\.sdhci/by-name/storsec_[ab]     u:object_r:vendor_custom_ab_block_device:s0
+/dev/block/platform/soc/4744000\.sdhci/by-name/vendor_boot_[ab] u:object_r:boot_block_device:s0
 /dev/block/platform/soc/4804000\.ufshc/by-name/fsg_[ab]         u:object_r:vendor_modem_efs_partition_device:s0
 /dev/block/platform/soc/4804000\.ufshc/by-name/logo_[ab]        u:object_r:vendor_custom_ab_block_device:s0
 /dev/block/platform/soc/4804000\.ufshc/by-name/prov_[ab]        u:object_r:vendor_custom_ab_block_device:s0
@@ -6,7 +11,11 @@
 /dev/block/platform/soc/4804000\.ufshc/by-name/vendor_boot_[ab] u:object_r:boot_block_device:s0
 /dev/block/platform/soc/4804000\.ufshc/sd[df]                   u:object_r:vendor_gpt_block_device:s0
 
-# UFS Devices
+# EMMC/UFS Devices
+/dev/block/platform/soc/4744000\.sdhci/by-name/hw               u:object_r:vendor_hw_block_device:s0
+/dev/block/platform/soc/4744000\.sdhci/by-name/prodpersist      u:object_r:vendor_prodpersist_block_device:s0
+/dev/block/platform/soc/4744000\.sdhci/by-name/utags            u:object_r:vendor_utags_block_device:s0
+/dev/block/platform/soc/4744000\.sdhci/by-name/utagsBackup      u:object_r:vendor_utags_block_device:s0
 /dev/block/platform/soc/4804000\.ufshc/by-name/hw               u:object_r:vendor_hw_block_device:s0
 /dev/block/platform/soc/4804000\.ufshc/by-name/prodpersist      u:object_r:vendor_prodpersist_block_device:s0
 /dev/block/platform/soc/4804000\.ufshc/by-name/utags            u:object_r:vendor_utags_block_device:s0
