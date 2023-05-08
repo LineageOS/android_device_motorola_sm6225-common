@@ -59,8 +59,11 @@ genfscon sysfs /devices/platform/soc/4a84000.i2c/i2c-1/1-003b/power_supply/charg
 genfscon sysfs /devices/platform/soc/4a84000.i2c/i2c-1/1-0047/tcpc/type_c_port0/dual-role-type_c_port0/wakeup    u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/soc/4a84000.i2c/i2c-1/1-0047/tcpc/type_c_port0/wakeup                           u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/soc/4a84000.i2c/i2c-1/1-0047/wakeup                                             u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/4a84000.i2c/i2c-1/1-0066/power_supply/cp-standalone/wakeup                  u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/4a84000.i2c/i2c-1/1-0066/wakeup                                             u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/soc/4a88000.i2c/i2c-1/1-0064/power_supply/bms/wakeup                            u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/soc/4a88000.i2c/i2c-2/2-0038/wakeup                                             u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/4a88000.spi/spi_master/spi0/spi0.0/wakeup                                   u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/soc/soc:et528/wakeup                                                            u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/soc/soc:fp_egistec/wakeup                                                       u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/soc/soc:fpc_fpc1020/wakeup                                                      u:object_r:sysfs_wakeup:s0
@@ -74,3 +77,4 @@ genfscon sysfs /devices/platform/soc/soc:mmi,discrete-charging/power_supply/usb/
 genfscon sysfs /devices/platform/soc/soc:mmi,discrete-charging/wakeup                                            u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/soc/soc:mmi_chrg_manager/power_supply/mmi_chrg_manager/wakeup                   u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/virtual/input/input2/wakeup                                                              u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/virtual/misc/focaltech_fp/wakeup                                                         u:object_r:sysfs_wakeup:s0
