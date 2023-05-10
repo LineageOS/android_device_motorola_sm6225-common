@@ -414,10 +414,6 @@ PRODUCT_PACKAGES += \
     init.qcom.usb.rc \
     init.qcom.usb.sh
 
-# Vendor ramdisk
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/rootdir/etc/fstab.qcom_ramdisk:$(TARGET_COPY_OUT_VENDOR_RAMDISK)/first_stage_ramdisk/fstab.qcom
-
 # Vendor service manager
 PRODUCT_PACKAGES += \
     vndservicemanager
