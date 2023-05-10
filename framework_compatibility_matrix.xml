@@ -28,54 +28,6 @@
         </interface>
     </hal>
     <hal format="hidl" optional="true">
-        <name>com.motorola.hardware.display.panel</name>
-        <version>1.0</version>
-        <interface>
-            <name>IDisplayPanel</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="hidl" optional="true">
-        <name>motorola.hardware.camera.imgtuner</name>
-        <version>1.0</version>
-        <interface>
-            <name>IImageTuning</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="hidl" optional="true">
-        <name>motorola.hardware.fdrcontrol</name>
-        <version>1.0-2</version>
-        <interface>
-            <name>IFdrControl</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="hidl" optional="true">
-        <name>motorola.hardware.health</name>
-        <version>2.0</version>
-        <interface>
-            <name>IMotHealth</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="hidl" optional="true">
-        <name>motorola.hardware.vibrator</name>
-        <version>1.0</version>
-        <interface>
-            <name>IMotVibrator</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="hidl" optional="true">
-        <name>motorola.hardware.wifi.supplicant</name>
-        <version>1.0-1</version>
-        <interface>
-            <name>ISupplicantMot</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="hidl" optional="true">
         <name>vendor.egistec.hardware.fingerprint</name>
         <version>2.0</version>
         <interface>

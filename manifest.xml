@@ -226,20 +226,6 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
         <fqname>@1.0::IMotoFingerPrintSensorTest/default</fqname>
     </hal>
     <hal format="hidl">
-        <name>com.motorola.hardware.display.panel</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>IDisplayPanel</name>
-            <instance>default</instance>
-        </interface>
-        <fqname>@1.0::IDisplayPanel/default</fqname>
-    </hal>
-    <hal format="hidl" override="true">
-        <name>com.motorola.hardware.display.touch</name>
-        <transport>hwbinder</transport>
-    </hal>
-    <hal format="hidl">
         <name>com.qualcomm.qti.dpm.api</name>
         <transport>hwbinder</transport>
         <version>1.0</version>
@@ -268,60 +254,6 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
             <instance>com.qualcomm.qti.uceservice</instance>
         </interface>
         <fqname>@2.3::IUceService/com.qualcomm.qti.uceservice</fqname>
-    </hal>
-    <hal format="hidl">
-        <name>motorola.hardware.camera.imgtuner</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>IImageTuning</name>
-            <instance>default</instance>
-        </interface>
-        <fqname>@1.0::IImageTuning/default</fqname>
-    </hal>
-    <hal format="hidl">
-        <name>motorola.hardware.fdrcontrol</name>
-        <transport>hwbinder</transport>
-        <version>1.2</version>
-        <interface>
-            <name>IFdrControl</name>
-            <instance>default</instance>
-        </interface>
-        <fqname>@1.2::IFdrControl/default</fqname>
-    </hal>
-    <hal format="hidl">
-        <name>motorola.hardware.health</name>
-        <transport>hwbinder</transport>
-        <version>2.0</version>
-        <interface>
-            <name>IMotHealth</name>
-            <instance>default</instance>
-        </interface>
-        <fqname>@2.0::IMotHealth/default</fqname>
-    </hal>
-    <hal format="hidl">
-        <name>motorola.hardware.vibrator</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>IMotVibrator</name>
-            <instance>default</instance>
-        </interface>
-        <fqname>@1.0::IMotVibrator/default</fqname>
-    </hal>
-    <hal format="hidl">
-        <name>motorola.hardware.wifi.supplicant</name>
-        <transport>hwbinder</transport>
-        <version>1.1</version>
-        <interface>
-            <name>ISupplicantMot</name>
-            <instance>default</instance>
-        </interface>
-        <fqname>@1.1::ISupplicantMot/default</fqname>
-    </hal>
-    <hal format="hidl" override="true">
-        <name>motorola.hardware.wireless.powershare</name>
-        <transport>hwbinder</transport>
     </hal>
     <hal format="hidl">
         <name>vendor.qti.data.factory</name>
