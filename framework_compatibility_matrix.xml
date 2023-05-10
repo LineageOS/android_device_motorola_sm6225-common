@@ -1,5 +1,21 @@
 <compatibility-matrix version="1.0" type="framework">
     <hal format="hidl" optional="true">
+        <name>com.fingerprints.extension</name>
+        <version>1.0</version>
+        <interface>
+            <name>IFingerprintEngineering</name>
+            <instance>default</instance>
+        </interface>
+        <interface>
+            <name>IFingerprintNavigation</name>
+            <instance>default</instance>
+        </interface>
+        <interface>
+            <name>IFingerprintSensorTest</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
         <name>com.motorola.hardware.biometric.fingerprint</name>
         <version>1.0</version>
         <interface>
@@ -56,6 +72,14 @@
         <version>1.0-1</version>
         <interface>
             <name>ISupplicantMot</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.egistec.hardware.fingerprint</name>
+        <version>2.0</version>
+        <interface>
+            <name>IBiometricsFingerprintEts</name>
             <instance>default</instance>
         </interface>
     </hal>
