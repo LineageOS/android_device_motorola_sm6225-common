@@ -137,9 +137,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     disable_configstore
 
-# Dalvik
-$(call inherit-product, frameworks/native/build/phone-xhdpi-2048-dalvik-heap.mk)
-
 # Display
 PRODUCT_PACKAGES += \
     android.hardware.graphics.mapper@3.0-impl-qti-display \
@@ -385,6 +382,7 @@ PRODUCT_PACKAGES += \
     init.qti.early_init.sh \
     init.mmi.charge_only.rc \
     init.mmi.chipset.rc \
+    init.mmi.dalvik.rc \
     init.mmi.debug.rc \
     init.mmi.rc \
     init.qcom.factory.rc \

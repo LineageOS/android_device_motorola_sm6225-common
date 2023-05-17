@@ -26,6 +26,9 @@ import /vendor/etc/init/hw/init.mmi.debug.rc
 import /vendor/etc/init/carrier/init.${ro.boot.carrier}.rc
 import /vendor/etc/init/carrier/init.default.rc
 
+# Dalvik configuration
+import /vendor/etc/init/hw/init.mmi.dalvik.rc
+
 on early-boot
     write /sys/module/subsystem_restart/parameters/disable_restart_work 0x0
 
