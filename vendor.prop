@@ -246,5 +246,8 @@ vendor.usb.use_gadget_hal=0
 # Wifi
 wifi.aware.interface=wifi-aware0
 
+# ZRAM
+ro.vendor.zram.swapon=true
+
 # Zygote
 zygote.critical_window.minute=10
