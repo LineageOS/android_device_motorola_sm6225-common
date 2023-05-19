@@ -1,5 +1,6 @@
 # Fingerprint
 type etsd_device, dev_type;
+type focaltech_fp_device, dev_type;
 type fpsensor_device, dev_type;
 
 # Moto partitions
