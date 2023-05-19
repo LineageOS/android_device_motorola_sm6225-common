@@ -1,7 +1,5 @@
 allow hal_fingerprint_default {
-  etsd_device
-  focaltech_fp_device
-  fpsensor_device
+  fps_device
   tee_device
 }: chr_file rw_file_perms;
 

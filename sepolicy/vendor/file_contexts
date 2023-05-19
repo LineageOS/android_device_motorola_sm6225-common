@@ -43,9 +43,9 @@
 /data/vendor/.fps(/.*)?                                 u:object_r:fingerprint_vendor_data_file:s0
 /data/vendor/focaltech(/.*)?                            u:object_r:fingerprint_vendor_data_file:s0
 /data/vendor/fpc(/.*)?                                  u:object_r:fingerprint_vendor_data_file:s0
-/dev/esfp0                                              u:object_r:etsd_device:s0
-/dev/focaltech_fp                                       u:object_r:focaltech_fp_device:s0
-/dev/fpsensor                                           u:object_r:fpsensor_device:s0
+/dev/esfp0                                              u:object_r:fps_device:s0
+/dev/focaltech_fp                                       u:object_r:fps_device:s0
+/dev/fpsensor                                           u:object_r:fps_device:s0
 
 # Motobox
 /(vendor|system/vendor)/bin/motobox                     u:object_r:vendor_motobox_exec:s0
