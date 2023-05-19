@@ -50,6 +50,9 @@ TARGET_FS_CONFIG_GEN := \
     $(COMMON_PATH)/config.fs \
     $(COMMON_PATH)/mot_aids.fs
 
+# FM
+BOARD_HAVE_QCOM_FM := true
+
 # GPS
 BOARD_VENDOR_QCOM_GPS_LOC_API_HARDWARE := default
 LOC_HIDL_VERSION := 4.0
