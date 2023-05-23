@@ -3,6 +3,7 @@ com.motorola.hardware.biometric.fingerprint::IMotoFingerPrint           u:object
 com.motorola.hardware.biometric.fingerprint::IMotoFingerPrintSensorTest u:object_r:hal_fingerprint_hwservice:s0
 vendor.egistec.hardware.fingerprint::IBiometricsFingerprintEts          u:object_r:hal_fingerprint_hwservice:s0
 vendor.egistec.hardware.fingerprint::IBiometricsFingerprintRbs          u:object_r:hal_fingerprint_hwservice:s0
+vendor.egistecbix.hardware.fingerprint::IBiometricsFingerprintBix       u:object_r:hal_fingerprint_hwservice:s0
 
 # NFC
 vendor.nxp.nxpese::INxpEse                                              u:object_r:nxpese_hwservice:s0
