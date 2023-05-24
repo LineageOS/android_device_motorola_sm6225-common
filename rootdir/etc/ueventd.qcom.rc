@@ -526,3 +526,6 @@ firmware_directories /vendor/firmware_mnt/image/
 
 # I2C
 /dev/i2c-*                0660   system     system
+
+# Charger
+/sys/class/power_supply/battery  charging_enabled    0660    system  system
