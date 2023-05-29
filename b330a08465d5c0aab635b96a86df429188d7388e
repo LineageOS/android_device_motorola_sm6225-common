@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "7019eb60_9d55dfab",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 24334
+      },
+      "writtenOn": "2023-05-29T18:22:58Z",
+      "side": 1,
+      "message": "Tested in rhode (90Hz) and Hawao (60Hz)",
+      "revId": "b330a08465d5c0aab635b96a86df429188d7388e",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
