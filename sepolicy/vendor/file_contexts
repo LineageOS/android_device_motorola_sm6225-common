@@ -62,6 +62,7 @@
 /dev/mmi_sys_temp                                       u:object_r:vendor_thermal_device:s0
 
 # Vendor init scripts
+/(vendor|system/vendor)/bin/init\.mmi\.acdb\.sh                 u:object_r:vendor_init_hw_exec:s0
 /(vendor|system/vendor)/bin/init\.mmi\.boot\.sh                 u:object_r:vendor_mmi_boot_exec:s0
 /(vendor|system/vendor)/bin/init\.mmi\.laser\.sh                u:object_r:vendor_mmi_laser_exec:s0
 /(vendor|system/vendor)/bin/init\.mmi\.touch\.sh                u:object_r:vendor_init_touch_exec:s0
