@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "c3c253e0_61d31314",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 32728
+      },
+      "writtenOn": "2023-06-01T03:33:16Z",
+      "side": 1,
+      "message": "boot, vendor_boot and dtbo partition sizes also need to be corrected.",
+      "revId": "f42ab1aeb0212113cfbf9c38de8f83fe9a04e00b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
