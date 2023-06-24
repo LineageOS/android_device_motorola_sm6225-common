@@ -19,7 +19,7 @@ vendor.hw.fps.ident                            u:object_r:vendor_mot_fingerprint
 vendor.hw.fingerprint.status                   u:object_r:vendor_mot_fingerprint_prop:s0
 
 # Motorola touch
-vendor.hw.touch.status            u:object_r:vendor_mot_touch_prop:s0
+vendor.hw.touch.                  u:object_r:vendor_mot_touch_prop:s0
 ro.vendor.touch.fw_version        u:object_r:vendor_mot_touch_prop:s0
 ro.vendor.touch.supplier_vendor   u:object_r:vendor_mot_touch_prop:s0
 
