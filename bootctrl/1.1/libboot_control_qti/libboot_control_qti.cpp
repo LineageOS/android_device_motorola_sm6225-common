@@ -345,12 +345,25 @@ static int boot_ctl_set_active_slot_for_partitions(vector<string> part_list,
 			if (!diskB)
 				goto error;
 		}
+
+		//If the disks are the same should use old logic
+		//emmc devices are not split disks so it will fail
+		//to switch
+		if (!strncmp(diskA->devpath, diskB->devpath, PATH_MAX)) {
+			gpt_disk_free(diskB);
+			diskB = NULL;
+		}
 		//Get partition entry for slot A & B from the primary
 		//and backup tables.
 		pentryA = gpt_disk_get_pentry(diskA, slotA, PRIMARY_GPT);
 		pentryA_bak = gpt_disk_get_pentry(diskA, slotA, SECONDARY_GPT);
-		pentryB = gpt_disk_get_pentry(diskB, slotB, PRIMARY_GPT);
-		pentryB_bak = gpt_disk_get_pentry(diskB, slotB, SECONDARY_GPT);
+		if (diskB) {
+			pentryB = gpt_disk_get_pentry(diskB, slotB, PRIMARY_GPT);
+			pentryB_bak = gpt_disk_get_pentry(diskB, slotB, SECONDARY_GPT);
+		} else {
+			pentryB = gpt_disk_get_pentry(diskA, slotB, PRIMARY_GPT);
+			pentryB_bak = gpt_disk_get_pentry(diskA, slotB, SECONDARY_GPT);
+		}
 		if ( !pentryA || !pentryA_bak || !pentryB || !pentryB_bak) {
 			//None of these should be NULL since we have already
 			//checked for A & B versions earlier.
