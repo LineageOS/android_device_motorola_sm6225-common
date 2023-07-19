@@ -51,7 +51,7 @@
 /(vendor|system/vendor)/bin/motobox                     u:object_r:vendor_motobox_exec:s0
 
 # NFC
-/dev/sec-nfc                                            u:object_r:sec_device:s0
+/dev/sec-nfc                                            u:object_r:nfc_device:s0
 /dev/st21nfc                                            u:object_r:nfc_device:s0
 /(vendor|system/vendor)/bin/STFlashTool                 u:object_r:stflashtool_exec:s0
 /(vendor|system/vendor)/bin/hw/android\.hardware\.nfc@1\.2-service\.sec       u:object_r:hal_nfc_default_exec:s0

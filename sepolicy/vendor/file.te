@@ -17,9 +17,6 @@ type vendor_motobox_exec, exec_type, vendor_file_type, file_type;
 type vendor_proc_hw, proc_type, fs_type;
 type vendor_sysfs_devicetree_mmi, sysfs_type, fs_type;
 
-# NFC
-type sec_device, dev_type;
-
 # Partitions
 type fsg_file, file_type, contextmount_type, vendor_file_type;
 
