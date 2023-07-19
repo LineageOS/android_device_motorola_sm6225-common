@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "75f682eb_dfdd5a54",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 24334
+      },
+      "writtenOn": "2023-07-19T06:33:17Z",
+      "side": 1,
+      "message": "ok don\u0027t want moto charger. let\u0027s use AOSP instead",
+      "revId": "a10a9a42c750e2f14a20157031c49f5b19dbdd62",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
