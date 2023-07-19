@@ -92,6 +92,7 @@ vendor/etc/init/android.hardware.camera.provider@2.4-service_64.rc
 vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so
 
 # Charger
+vendor/bin/charge_only_mode
 vendor/bin/hvdcp_opti
 vendor/bin/init.qti.chg_policy.sh
 vendor/etc/charger_fstab.qti
