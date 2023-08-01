@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "e40e762c_af7226ae",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 14010
+      },
+      "writtenOn": "2023-08-01T16:11:25Z",
+      "side": 1,
+      "message": "Not sure if there are perhaps more paths to label, these are the ones that triggered denials in my case.",
+      "revId": "4076e69cc2bc2e83d388bed84a7624670c8f6d03",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
