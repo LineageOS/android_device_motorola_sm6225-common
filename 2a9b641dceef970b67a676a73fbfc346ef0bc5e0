@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "f248f2a6_6acf8dbd",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 24334
+      },
+      "writtenOn": "2023-08-01T19:58:16Z",
+      "side": 1,
+      "message": "I can\u0027t verify from my side. Probably variants.",
+      "revId": "2a9b641dceef970b67a676a73fbfc346ef0bc5e0",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
