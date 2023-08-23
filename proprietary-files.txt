@@ -1,4 +1,4 @@
-# All unpinned blobs below are extracted from devon_g S2SNS32.34-72-14-1
+# All unpinned blobs below are extracted from devon_g S2SNS32.34-72-31-1
 
 # ADSP
 vendor/bin/adsprpcd
