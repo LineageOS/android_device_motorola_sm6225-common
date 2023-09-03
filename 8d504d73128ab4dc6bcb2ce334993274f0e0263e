@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ce8d61b9_4f59a7dc",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 14010
+      },
+      "writtenOn": "2023-09-03T14:00:53Z",
+      "side": 1,
+      "message": "This commit doesn\u0027t seem to be part of any CAF tag for bengal, but the error here is evident.",
+      "revId": "8d504d73128ab4dc6bcb2ce334993274f0e0263e",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
