@@ -35,6 +35,24 @@
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "274ce84d_f43ef4fe",
+        "filename": "gps/android/utils/battery_listener.cpp",
+        "patchSetId": 1
+      },
+      "lineNbr": 198,
+      "author": {
+        "id": 24334
+      },
+      "writtenOn": "2023-09-09T17:08:02Z",
+      "side": 1,
+      "message": "Acknowledged",
+      "parentUuid": "13c19603_426b3cbf",
+      "revId": "8d504d73128ab4dc6bcb2ce334993274f0e0263e",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "74ac93c7_795740d6",
@@ -48,6 +66,24 @@
       "writtenOn": "2023-09-09T17:05:15Z",
       "side": 1,
       "message": "empty space?",
+      "revId": "8d504d73128ab4dc6bcb2ce334993274f0e0263e",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "a59d322f_638e0392",
+        "filename": "gps/android/utils/battery_listener.cpp",
+        "patchSetId": 1
+      },
+      "lineNbr": 217,
+      "author": {
+        "id": 24334
+      },
+      "writtenOn": "2023-09-09T17:08:02Z",
+      "side": 1,
+      "message": "Acknowledged",
+      "parentUuid": "74ac93c7_795740d6",
       "revId": "8d504d73128ab4dc6bcb2ce334993274f0e0263e",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
