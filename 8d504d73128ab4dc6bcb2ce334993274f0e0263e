@@ -16,6 +16,40 @@
       "message": "This commit doesn\u0027t seem to be part of any CAF tag for bengal, but the error here is evident.",
       "revId": "8d504d73128ab4dc6bcb2ce334993274f0e0263e",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "13c19603_426b3cbf",
+        "filename": "gps/android/utils/battery_listener.cpp",
+        "patchSetId": 1
+      },
+      "lineNbr": 198,
+      "author": {
+        "id": 24334
+      },
+      "writtenOn": "2023-09-09T17:05:15Z",
+      "side": 1,
+      "message": "empty space?",
+      "revId": "8d504d73128ab4dc6bcb2ce334993274f0e0263e",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "74ac93c7_795740d6",
+        "filename": "gps/android/utils/battery_listener.cpp",
+        "patchSetId": 1
+      },
+      "lineNbr": 217,
+      "author": {
+        "id": 24334
+      },
+      "writtenOn": "2023-09-09T17:05:15Z",
+      "side": 1,
+      "message": "empty space?",
+      "revId": "8d504d73128ab4dc6bcb2ce334993274f0e0263e",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
