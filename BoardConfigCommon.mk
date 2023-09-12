@@ -5,8 +5,6 @@
 
 COMMON_PATH := device/motorola/sm6225-common
 
-BUILD_BROKEN_DUP_RULES := true
-
 # ANT+
 BOARD_ANT_WIRELESS_DEVICE := "qualcomm-hidl"
 
