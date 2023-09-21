@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "a4f584e1_659c2ec1",
+        "filename": "proprietary-files.txt",
+        "patchSetId": 1
+      },
+      "lineNbr": 668,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2023-09-21T13:33:35Z",
+      "side": 0,
+      "message": "Keep the double sha1sum: first is the original file sha1, second is the modified file sha1",
+      "range": {
+        "startLine": 668,
+        "startChar": 32,
+        "endLine": 668,
+        "endChar": 113
+      },
+      "revId": "8d504d73128ab4dc6bcb2ce334993274f0e0263e",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
