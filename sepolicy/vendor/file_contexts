@@ -22,6 +22,7 @@
 /dev/block/platform/soc/4804000\.ufshc/by-name/utagsBackup      u:object_r:vendor_utags_block_device:s0
 
 # Partition Mountpoints
+/fsg                                                    u:object_r:fsg_file:s0
 /(vendor|system/vendor)/fsg                             u:object_r:fsg_file:s0
 
 # Awinic
