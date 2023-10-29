@@ -47,6 +47,9 @@
 /dev/focaltech_fp                                       u:object_r:fps_device:s0
 /dev/fpsensor                                           u:object_r:fps_device:s0
 
+# Lights
+/(vendor|system/vendor)/bin/hw/android\.hardware\.lights-service\.bengal      u:object_r:hal_light_default_exec:s0
+
 # Motobox
 /(vendor|system/vendor)/bin/motobox                     u:object_r:vendor_motobox_exec:s0
 
