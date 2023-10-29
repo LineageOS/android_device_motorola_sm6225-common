@@ -32,6 +32,9 @@ genfscon sysfs /devices/platform/soc/soc:mmi_chrg_manager/iio:device            
 # Input Devices
 genfscon sysfs /devices/virtual/input                                           u:object_r:vendor_sysfs_input:s0
 
+# Lights
+genfscon sysfs /devices/platform/soc/soc:indicator_led/leds/charging            u:object_r:sysfs_leds:s0
+
 # Motorola
 genfscon proc /bootinfo                                                         u:object_r:proc_moto_boot:s0
 genfscon proc /config                                                           u:object_r:vendor_proc_hw:s0

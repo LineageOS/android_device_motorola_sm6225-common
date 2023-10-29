@@ -199,4 +199,7 @@
     headset output is compliant to EN 60950 requirements for portable music players. -->
     <integer name="config_safe_media_volume_usb_mB">-1500</integer>
 
+    <!-- Is the notification LED intrusive? Used to decide if there should be a disable option -->
+    <bool name="config_intrusiveNotificationLed">true</bool>
+
 </resources>
