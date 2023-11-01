@@ -16,6 +16,57 @@
       "message": "Builds and runs fine on Hawao.",
       "revId": "41dd9b4bc6a21cbc94573c68e4badbe055194ed2",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "a8201ce2_ffa33d5c",
+        "filename": "lights/Android.bp",
+        "patchSetId": 1
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 24334
+      },
+      "writtenOn": "2023-11-01T17:13:14Z",
+      "side": 1,
+      "message": "2023 only",
+      "revId": "41dd9b4bc6a21cbc94573c68e4badbe055194ed2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "bb7fa9fd_b2255e55",
+        "filename": "lights/Lights.cpp",
+        "patchSetId": 1
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 24334
+      },
+      "writtenOn": "2023-11-01T17:13:14Z",
+      "side": 1,
+      "message": "2023 only",
+      "revId": "41dd9b4bc6a21cbc94573c68e4badbe055194ed2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "f9971078_4a6acb61",
+        "filename": "lights/Lights.h",
+        "patchSetId": 1
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 24334
+      },
+      "writtenOn": "2023-11-01T17:13:14Z",
+      "side": 1,
+      "message": "2023 only",
+      "revId": "41dd9b4bc6a21cbc94573c68e4badbe055194ed2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
