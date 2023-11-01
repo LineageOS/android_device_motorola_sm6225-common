@@ -35,6 +35,24 @@
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "76718fce_dd8f5c76",
+        "filename": "lights/Android.bp",
+        "patchSetId": 1
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 11409
+      },
+      "writtenOn": "2023-11-01T20:32:55Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "a8201ce2_ffa33d5c",
+      "revId": "41dd9b4bc6a21cbc94573c68e4badbe055194ed2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "bb7fa9fd_b2255e55",
@@ -52,6 +70,24 @@
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "d6713e20_9584c848",
+        "filename": "lights/Lights.cpp",
+        "patchSetId": 1
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 11409
+      },
+      "writtenOn": "2023-11-01T20:32:55Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "bb7fa9fd_b2255e55",
+      "revId": "41dd9b4bc6a21cbc94573c68e4badbe055194ed2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "f9971078_4a6acb61",
@@ -65,6 +101,24 @@
       "writtenOn": "2023-11-01T17:13:14Z",
       "side": 1,
       "message": "2023 only",
+      "revId": "41dd9b4bc6a21cbc94573c68e4badbe055194ed2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "c7670f9d_e6762aec",
+        "filename": "lights/Lights.h",
+        "patchSetId": 1
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 11409
+      },
+      "writtenOn": "2023-11-01T20:32:55Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "f9971078_4a6acb61",
       "revId": "41dd9b4bc6a21cbc94573c68e4badbe055194ed2",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
