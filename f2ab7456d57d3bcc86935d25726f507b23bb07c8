@@ -16,6 +16,23 @@
       "message": "Hardened the procedure against unexpected side-effekts to the led-driver/trigger.",
       "revId": "f2ab7456d57d3bcc86935d25726f507b23bb07c8",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "75d0c824_45db3c56",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 11409
+      },
+      "writtenOn": "2023-11-08T07:18:59Z",
+      "side": 1,
+      "message": "Stable on Hawao.",
+      "revId": "f2ab7456d57d3bcc86935d25726f507b23bb07c8",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
