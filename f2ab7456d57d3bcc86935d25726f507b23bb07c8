@@ -33,6 +33,24 @@
       "message": "Stable on Hawao.",
       "revId": "f2ab7456d57d3bcc86935d25726f507b23bb07c8",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "4d424313_449ab093",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 24334
+      },
+      "writtenOn": "2023-11-08T17:13:34Z",
+      "side": 1,
+      "message": "Thanks for your time. Seems like hawao only have the LED indicator. But ok we can have the AIDL here. if you don\u0027t mind, please move the bengal.mk and overlay changes to hawao tree.",
+      "parentUuid": "75d0c824_45db3c56",
+      "revId": "f2ab7456d57d3bcc86935d25726f507b23bb07c8",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
