@@ -1,9 +1,6 @@
 # App freezer
 ro.config.use_freezer=false
 
-# Charger
-ro.charger.enable_suspend=1
-
 # LMKD
 ro.lmk.kill_heaviest_task=true
 ro.lmk.swap_util_max=90
