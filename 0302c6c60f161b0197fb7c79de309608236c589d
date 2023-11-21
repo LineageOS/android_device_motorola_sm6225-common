@@ -16,6 +16,24 @@
       "message": "Does this actually fix anything?",
       "revId": "0302c6c60f161b0197fb7c79de309608236c589d",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "6067d48d_954bd8b3",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 14010
+      },
+      "writtenOn": "2023-11-21T18:05:27Z",
+      "side": 1,
+      "message": "I\u0027m not sure, TBH. I\u0027ve assumed it does, since many devices have got this patch in their trees.",
+      "parentUuid": "45fedcfe_d26b616e",
+      "revId": "0302c6c60f161b0197fb7c79de309608236c589d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
