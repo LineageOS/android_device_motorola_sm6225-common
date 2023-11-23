@@ -68,6 +68,24 @@
       "message": "This looks more like a global issue if so many devices have to pick it, shouldn\u0027t it be in common sepolicy and likely sent to AOSP?",
       "revId": "0302c6c60f161b0197fb7c79de309608236c589d",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "5e0138b4_75d9df90",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 14010
+      },
+      "writtenOn": "2023-11-23T20:30:28Z",
+      "side": 1,
+      "message": "I have been thinking about it, too. We should probably commonize this and the other change I\u0027ve uploaded today. I\u0027ll upload the patches tomorrow, so we can discuss them with others.",
+      "parentUuid": "06348fcf_40b5aa34",
+      "revId": "0302c6c60f161b0197fb7c79de309608236c589d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
