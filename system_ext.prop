@@ -1,5 +1,16 @@
+# CNE
+persist.vendor.cne.feature=1
+persist.vendor.cne.logging.qxdm=3974
+
 # DPM
 persist.vendor.dpm.feature=11
 
+# Media
+media.settings.xml=/vendor/etc/media_profiles_vendor.xml
+ro.media.recorder-max-base-layer-fps=60
+
 # QVA
 ro.vendor.qti.va_aosp.support=1
+
+# Radio
+ril.subscription.types=RUIM
