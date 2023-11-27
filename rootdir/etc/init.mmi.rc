@@ -5,9 +5,12 @@ import /vendor/etc/init/hw/init.mmi.chipset.rc
 import /vendor/etc/init/hw/init.mmi.overlay.rc
 
 # Moto USB configuration
-# import /vendor/etc/init/hw/init.mmi.usb.rc
+#import /vendor/etc/init/hw/init.mmi.usb.rc
 # Moto debugging
 import /vendor/etc/init/hw/init.mmi.debug.rc
+
+# Moto diag_mdlog configuration
+#import /vendor/etc/init/hw/init.mmi.diag_mdlog.rc
 
 #import /vendor/etc/init/hw/init.oem.rc
 #import /vendor/etc/init/hw/init.mmi.common.rc
@@ -77,6 +80,7 @@ on early-init
     setprop ro.vendor.boot.powerup_reason ${ro.boot.powerup_reason}
     setprop ro.vendor.boot.bl_state ${ro.boot.bl_state}
     setprop ro.vendor.boot.serialno ${ro.boot.serialno}
+    setprop ro.vendor.boot.nal_id ${ro.boot.nal_id}
     setprop ro.vendor.zygote ${ro.zygote}
 
     # Make sure ro.boot.product.hardware.sku is set before hwservicemanager startup.
@@ -112,6 +116,7 @@ on post-fs && property:ro.vendor.hw.fsg_super_image=yes
 
 on post-fs
     mkdir /mnt/vendor/persist/camera 0755 vendor_tcmd vendor_tcmd
+    mkdir /mnt/vendor/persist/camera/iqtuning 0755 vendor_tcmd vendor_tcmd
     mkdir /mnt/vendor/persist/camera/dualcal 0775 camera vendor_tcmd
     mkdir /mnt/vendor/persist/camera/focus 0775 camera vendor_tcmd
     mkdir /mnt/vendor/persist/camera/ledcal 0775 camera vendor_tcmd
@@ -263,6 +268,9 @@ on post-fs-data
     # Imager tuning data for camera subsystem
     mkdir /data/vendor/misc/imager 0771 camera camera
 
+    # Imager tuning metadata for camera subsystem
+    mkdir /data/vendor/misc/imager/metadata 0771 camera camera
+
     # NFC vendor data
     mkdir /data/vendor/nfc 0770 nfc nfc
 
@@ -347,8 +355,8 @@ on boot
 #service vendor.bl_logs_copy /vendor/bin/apanic_copy.sh -i
 #    class late_start
 #    group log
- #   oneshot
- #   disabled
+#    oneshot
+#    disabled
 
 #service vendor.apanic_annotate /vendor/bin/apanic_save.sh build
 #    class late_start
@@ -362,7 +370,7 @@ service vendor.batt_health /vendor/bin/batt_health
     group vendor_pwric cache net_admin log
     disabled
 
-on property:sys.boot_completed=1
+on property:sys.boot_completed=1 && property:ro.product.is_production=false
     start vendor.batt_health
 
 on property:sys.boot_completed=1 && property:ro.vendor.zram.swapon=true
@@ -431,7 +439,8 @@ service vendor.mmi-boot-sh /vendor/bin/init.mmi.boot.sh
 
 #service vendor.mmi-shutdown-sh /vendor/bin/init.mmi.shutdown.sh
 #    class core
-##    oneshot
+#    user root
+#    oneshot
 #    disabled
 
 # translate MMI property in order to keep the consistent with QCOM
@@ -584,3 +593,10 @@ on shutdown
 # IKSWQ-149109: Force shutter tone on Japan softbank carrier
 on property:ro.carrier=softbank
     setprop audio.camerasound.force true
+
+# IKSWT-90913: Force shutter tone on Japan ymobile carrier
+on property:ro.carrier=ymobile
+    setprop audio.camerasound.force true
+
+on property:ro.vendor.hw.pvtui=*
+    setprop ro.hardware.device.pvtui ${ro.vendor.hw.pvtui}
