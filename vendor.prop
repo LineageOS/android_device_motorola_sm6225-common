@@ -168,6 +168,7 @@ persist.vendor.ims.disableIMSLogs=1
 persist.vendor.ims.display_delay=40
 persist.vendor.ims.playout_delay=50
 persist.vendor.ims.vt.enableadb=1
+persist.vendor.rcs.singlereg.feature=1
 
 # Media
 debug.stagefright.ccodec=1
@@ -195,13 +196,13 @@ persist.vendor.radio.eri64_as_home=1
 persist.vendor.radio.fi_supported=0
 persist.vendor.radio.force_get_pref=1
 persist.vendor.radio.lte_vrte_ltd=1
+persist.vendor.radio.mot_efs_log=false
 persist.vendor.radio.msgtunnel.start=true
 persist.vendor.radio.mt_sms_ack=30
 persist.vendor.radio.no_wait_for_card=1
 persist.vendor.radio.oem_ind_to_both=0
 persist.vendor.radio.procedure_bytes=SKIP
 persist.vendor.radio.qcril_uim_vcc_feature=1
-persist.vendor.radio.rat_on=combine
 persist.vendor.radio.sar_sensor=1
 persist.vendor.radio.sib16_support=1
 persist.vendor.radio.start_ota_daemon=1
