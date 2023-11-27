@@ -27,6 +27,9 @@
 # OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN
 # IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #
+# Changes from Qualcomm Innovation Center are provided under the following license:
+# Copyright (c) 2022 Qualcomm Innovation Center, Inc. All rights reserved.
+# SPDX-License-Identifier: BSD-3-Clause-Clear
 
 soc_id=`cat /sys/devices/soc0/soc_id` 2> /dev/null
 
@@ -39,7 +42,7 @@ elif [ "$soc_id" -eq 417 ]; then
     setprop ro.vendor.qti.soc_model SM4250
 elif [ "$soc_id" -eq 441 ]; then
     setprop ro.vendor.qti.soc_model SM4125
-elif [ "$soc_id" -eq 518 ]; then
+elif [ "$soc_id" -eq 518 ] || [ "$soc_id" -eq 561 ]; then
     setprop ro.vendor.qti.soc_model SM6225
 elif [ "$soc_id" -eq 469 ]; then
     setprop ro.vendor.qti.soc_model QCM4290
@@ -53,4 +56,6 @@ elif [ "$soc_id" -eq 497 ]; then
     setprop ro.vendor.qti.soc_model QCM6490
 elif [ "$soc_id" -eq 498 ]; then
     setprop ro.vendor.qti.soc_model QCS6490
+elif [ "$soc_id" -eq 585 ]; then
+    setprop ro.vendor.qti.soc_model SG4150P
 fi
