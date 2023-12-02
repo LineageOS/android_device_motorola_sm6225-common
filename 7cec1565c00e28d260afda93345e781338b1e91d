@@ -16,6 +16,23 @@
       "message": "Tested with hawao, but I guess it should also work with devon and rhode. Could someone else test with those two device types?",
       "revId": "7cec1565c00e28d260afda93345e781338b1e91d",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "c88919c7_2fb805fe",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 11409
+      },
+      "writtenOn": "2023-12-02T10:23:36Z",
+      "side": 1,
+      "message": "Works on hawao, but it has to be checked on devon and rhode.",
+      "revId": "7cec1565c00e28d260afda93345e781338b1e91d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
