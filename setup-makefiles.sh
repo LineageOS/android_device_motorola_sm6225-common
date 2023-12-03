@@ -25,7 +25,7 @@ source "${HELPER}"
 setup_vendor "${DEVICE_COMMON}" "${VENDOR}" "${ANDROID_ROOT}" true
 
 # Warning headers and guards
-write_headers "borneo capri caprip devon hawao rhode"
+write_headers "borneo capri caprip cebu guam guamna guamp devon hawao rhode"
 
 # The standard common blobs
 write_makefiles "${MY_DIR}/proprietary-files.txt" true
