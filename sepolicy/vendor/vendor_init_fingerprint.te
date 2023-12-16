@@ -14,4 +14,5 @@ allow vendor_init_fingerprint vendor_sysfs_fingerprint:file { getattr setattr };
 allow vendor_init_fingerprint kmsg_device:chr_file w_file_perms;
 
 set_prop(vendor_init_fingerprint, ctl_start_prop)
+set_prop(vendor_init_fingerprint, ctl_stop_prop)
 set_prop(vendor_init_fingerprint, vendor_mot_fingerprint_prop)

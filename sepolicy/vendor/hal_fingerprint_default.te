@@ -15,3 +15,5 @@ allow hal_fingerprint_default uhid_device:chr_file rw_file_perms;
 allow hal_fingerprint_default vndbinder_device:chr_file rw_file_perms;
 binder_call(hal_fingerprint_default, vndservicemanager);
 allow hal_fingerprint_default hal_fingerprint_vndservice:service_manager add;
+allow hal_fingerprint_default vendor_hal_perf_hwservice:hwservice_manager find;
+binder_call(hal_fingerprint_default, vendor_hal_perf_default);
