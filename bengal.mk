@@ -140,7 +140,8 @@ PRODUCT_PACKAGES += \
     android.hardware.memtrack@1.0-impl \
     android.hardware.memtrack@1.0-service \
     vendor.qti.hardware.display.allocator-service \
-    vendor.qti.hardware.display.composer-service
+    vendor.qti.hardware.display.composer-service \
+    vendor.qti.hardware.display.config-V5-ndk
 
 PRODUCT_PACKAGES += \
     gralloc.bengal \
