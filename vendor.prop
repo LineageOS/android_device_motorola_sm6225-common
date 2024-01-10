@@ -228,6 +228,7 @@ ro.vendor.sensors.mot_ltv=true
 ro.vendor.sensors.pug=false
 
 # USB
+vendor.usb.device=4e00000.ssusb
 vendor.usb.diag.func.name=diag
 vendor.usb.dpl.inst.name=dpl
 vendor.usb.qdss.inst.name=qdss
