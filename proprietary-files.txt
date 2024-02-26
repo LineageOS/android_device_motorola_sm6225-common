@@ -402,9 +402,6 @@ vendor/lib64/libswvdec.so
 product/etc/permissions/com.motorola.moto-uirefresh.xml
 product/etc/permissions/com.motorola.motodisplay.xml
 
-# NFC
-system_ext/etc/nfcee_access.xml
-
 # OEM
 vendor/bin/motobox
 vendor/etc/vhw.xml
