@@ -669,6 +669,7 @@ system_ext/lib64/lib-imsvtutils.so
 system_ext/lib64/libimscamera_jni.so
 system_ext/lib64/libimsmedia_jni.so
 system_ext/lib64/vendor.qti.imsrtpservice@3.0.so
+system_ext/lib64/vendor.qti.imsrtpservice@3.1.so
 system_ext/priv-app/ims/ims.apk|2641da4033820e180720ce70686fd74409803686|64999c3ddf13c1f10065d92838a2e43cc5b0c62e
 vendor/bin/ims_rtp_daemon
 vendor/bin/imsdaemon
