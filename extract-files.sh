@@ -66,6 +66,9 @@ function blob_fixup() {
         vendor/etc/init/android.hardware.nfc@1.2-service-moto.rc)
             sed -i "s/class hal/override\n    class hal/" "${2}"
             ;;
+        vendor/etc/init/android.hardware.nfc@1.2-service.st-moto.rc)
+            sed -i "s/class hal/override\n    class hal/" "${2}"
+            ;;
         vendor/lib64/camera/components/com.qti.node.gpu.so)
             sed -i "s/camera.mot.is.coming.cts/vendor.camera.coming.cts/g" "${2}"
             ;;
