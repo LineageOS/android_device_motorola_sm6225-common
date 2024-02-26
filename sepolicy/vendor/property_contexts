@@ -12,6 +12,7 @@ ro.vendor.mot.iccid        u:object_r:vendor_mot_hw_prop:s0
 ro.vendor.bootreason       u:object_r:vendor_mot_hw_prop:s0
 ro.vendor.manufacturedate  u:object_r:vendor_mot_hw_prop:s0
 ro.vendor.product.device   u:object_r:vendor_mot_hw_prop:s0
+ro.vendor.product.display  u:object_r:vendor_mot_hw_prop:s0
 ro.vendor.product.hardware.sku.variant          u:object_r:vendor_mot_hw_prop:s0
 ro.vendor.product.model    u:object_r:vendor_mot_hw_prop:s0
 ro.vendor.product.name     u:object_r:vendor_mot_hw_prop:s0
