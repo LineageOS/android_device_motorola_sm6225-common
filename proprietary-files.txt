@@ -569,9 +569,9 @@ vendor/lib64/libril-qcril-hook-oem.so
 vendor/lib64/librilqmiservices.so
 vendor/lib64/libsettings.so
 vendor/lib64/libsystem_health_mon.so
-vendor/lib64/qcrild_librilutils.so
 vendor/lib64/qcrilHalMarshal.so
 vendor/lib64/qcril_hal_client.so
+vendor/lib64/qcrild_librilutils.so
 vendor/lib64/qtibus.so
 vendor/lib64/qtimutex.so
 vendor/lib64/vendor.qti.hardware.radio.am@1.0.so
@@ -628,13 +628,13 @@ vendor/radio/qcril_database/upgrade/36_version_qcrildb.sql
 vendor/radio/qcril_database/upgrade/37_version_qcrildb.sql
 vendor/radio/qcril_database/upgrade/38_version_qcrildb.sql
 vendor/radio/qcril_database/upgrade/39_version_qcrildb.sql
+vendor/radio/qcril_database/upgrade/3_version_qcrildb.sql
 vendor/radio/qcril_database/upgrade/40_version_qcrildb.sql
 vendor/radio/qcril_database/upgrade/41_version_qcrildb.sql
 vendor/radio/qcril_database/upgrade/42_version_qcrildb.sql
 vendor/radio/qcril_database/upgrade/43_version_qcrildb.sql
 vendor/radio/qcril_database/upgrade/44_version_qcrildb.sql
 vendor/radio/qcril_database/upgrade/45_version_qcrildb.sql
-vendor/radio/qcril_database/upgrade/3_version_qcrildb.sql
 vendor/radio/qcril_database/upgrade/4_version_qcrildb.sql
 vendor/radio/qcril_database/upgrade/5_version_qcrildb.sql
 vendor/radio/qcril_database/upgrade/6_version_qcrildb.sql
