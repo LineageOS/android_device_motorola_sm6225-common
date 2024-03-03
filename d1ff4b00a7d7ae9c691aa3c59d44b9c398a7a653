@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "20fcc89b_da60165d",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 14010
+      },
+      "writtenOn": "2024-03-03T08:57:57Z",
+      "side": 1,
+      "message": "I fixed the first sed command, which needs to replace all occurrences of \u0027sec\u0027 with \u0027samsung\u0027, not just the first one.",
+      "revId": "d1ff4b00a7d7ae9c691aa3c59d44b9c398a7a653",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
