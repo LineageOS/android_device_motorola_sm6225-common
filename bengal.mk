@@ -467,6 +467,7 @@ PRODUCT_COPY_FILES += \
 
 # Wifi Display
 PRODUCT_PACKAGES += \
+    android.media.audio.common.types-V2-cpp \
     libnl \
     libwfdaac_vendor
 
