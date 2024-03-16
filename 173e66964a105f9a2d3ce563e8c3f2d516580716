@@ -16,6 +16,23 @@
       "message": "Looks equally good on hawao (1080x2400 px) and caprip (720x1600 px). In case of permanent important notifications (like a special VPN in standby) together with messangers and e-mail account, it\u0027s helpful to see all icons instead of only three.",
       "revId": "173e66964a105f9a2d3ce563e8c3f2d516580716",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "87db7d8f_a5d05513",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 11409
+      },
+      "writtenOn": "2024-03-16T17:15:12Z",
+      "side": 1,
+      "message": "I think it\u0027s helpful.",
+      "revId": "173e66964a105f9a2d3ce563e8c3f2d516580716",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
