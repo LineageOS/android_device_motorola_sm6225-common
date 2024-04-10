@@ -289,10 +289,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.system.net.netd@1.1.vendor
 
-# Neural networks
-PRODUCT_PACKAGES += \
-    android.hardware.neuralnetworks@1.3.vendor
-
 # NFC
 PRODUCT_PACKAGES += \
     com.android.nfc_extras \
@@ -352,8 +348,7 @@ PRODUCT_COPY_FILES += \
 # Power
 PRODUCT_PACKAGES += \
     android.hardware.power-service-qti \
-    android.hardware.power@1.2.vendor \
-    android.hardware.power-V1-ndk_platform.vendor
+    android.hardware.power@1.2.vendor
 
 # Public libraries
 PRODUCT_COPY_FILES += \
