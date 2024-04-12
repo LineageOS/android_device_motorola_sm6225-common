@@ -248,6 +248,7 @@ PRODUCT_PACKAGES += \
     libc2dcolorconvert
 
 PRODUCT_PACKAGES += \
+    libavservices_minijail \
     libavservices_minijail.vendor
 
 # Media - Configs
