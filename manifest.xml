@@ -268,11 +268,6 @@
         <fqname>@1.0::ITuiComm/default</fqname>
     </hal>
     <hal format="hidl">
-        <name>vendor.qti.hardware.wifi.wifilearner</name>
-        <transport>hwbinder</transport>
-        <fqname>@1.0::IWifiStats/wifiStats</fqname>
-    </hal>
-    <hal format="hidl">
         <name>vendor.qti.ims.callinfo</name>
         <transport>hwbinder</transport>
         <fqname>@1.0::IService/default</fqname>
