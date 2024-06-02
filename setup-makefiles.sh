@@ -43,8 +43,10 @@ if [ -s "${MY_DIR}/../../${VENDOR}/${DEVICE}/proprietary-files.txt" ]; then
     # The standard device blobs
     write_makefiles "${MY_DIR}/../../${VENDOR}/${DEVICE}/proprietary-files.txt" true
 
-    write_rro_package "CarrierConfigOverlay" "com.android.carrierconfig" product
-    write_single_product_packages "CarrierConfigOverlay"
+    if [ -f "${MY_DIR}/../../${VENDOR}/${DEVICE}/proprietary-files-carriersettings.txt" ]; then
+        write_rro_package "CarrierConfigOverlay" "com.android.carrierconfig" product
+        write_single_product_packages "CarrierConfigOverlay"
+    fi
 
     if [ -f "${MY_DIR}/../../${VENDOR}/${DEVICE}/proprietary-firmware.txt" ]; then
         append_firmware_calls_to_makefiles "${MY_DIR}/../../${VENDOR}/${DEVICE}/proprietary-firmware.txt"
