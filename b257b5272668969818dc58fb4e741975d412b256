@@ -16,6 +16,24 @@
       "message": "Which device doesn\u0027t have carriersettings?",
       "revId": "b257b5272668969818dc58fb4e741975d412b256",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "6e9cd05e_a24f1d17",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 33259
+      },
+      "writtenOn": "2024-06-08T06:04:00Z",
+      "side": 1,
+      "message": "guam doesn\u0027t have, doesn\u0027t upgraded to A11 it\u0027s A10",
+      "parentUuid": "76a1b85b_0fb8b499",
+      "revId": "b257b5272668969818dc58fb4e741975d412b256",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
