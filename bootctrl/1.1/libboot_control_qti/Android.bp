@@ -1,3 +1,8 @@
+//
+// SPDX-FileCopyrightText: 2016-2024 The Linux Foundation
+// SPDX-License-Identifier: BSD-3-Clause
+//
+
 cc_library {
     name: "libboot_control_qti",
     vendor: true,
