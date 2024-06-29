@@ -293,10 +293,6 @@ PRODUCT_PACKAGES += \
     com.android.nfc_extras \
     Tag
 
-# OEM
-PRODUCT_PACKAGES += \
-    bin_expat_symlink
-
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \

@@ -7,13 +7,6 @@ soong_namespace {
 }
 
 install_symlink {
-    name: "bin_expat_symlink",
-    vendor: true,
-    installed_location: "bin/expat",
-    symlink_target: "motobox",
-}
-
-install_symlink {
     name: "firmware_aw_cali.bin_symlink",
     vendor: true,
     installed_location: "firmware/aw_cali.bin",
