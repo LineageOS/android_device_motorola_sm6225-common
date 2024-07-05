@@ -953,7 +953,7 @@ function configure_memory_parameters() {
 ProductName=`getprop ro.board.platform`
 low_ram=`getprop ro.config.low_ram`
 
-if [ "$ProductName" == "msmnile" ] || [ "$ProductName" == "kona" ] || [ "$ProductName" == "sdmshrike_au" ] || [ "$ProductName" == "lito" ] ; then
+if [ "$ProductName" == "msmnile" ] || [ "$ProductName" == "kona" ] || [ "$ProductName" == "sdmshrike_au" ]; then
       # Enable ZRAM
       configure_zram_parameters
       configure_read_ahead_kb_values
@@ -1051,21 +1051,13 @@ else
     fi
 
     if [[ "$ProductName" == "bengal"* ]]; then
-        DeviceName=`getprop ro.product.name`
-        #Do not set PPR parameters for the followimg targets:
-        #Guam NA
-        case "$DeviceName" in
-          "guamna"*) ;;
-          *)
-                #Set PPR nomap parameters for all other bengal targets
-                echo 1 > /sys/module/process_reclaim/parameters/enable_process_reclaim
-                echo 50 > /sys/module/process_reclaim/parameters/pressure_min
-                echo 70 > /sys/module/process_reclaim/parameters/pressure_max
-                echo 30 > /sys/module/process_reclaim/parameters/swap_opt_eff
-                echo 0 > /sys/module/process_reclaim/parameters/per_swap_size
-                echo 7680 > /sys/module/process_reclaim/parameters/tsk_nomap_swap_sz
-                ;;
-        esac
+        #Set PPR nomap parameters for bengal targets
+        echo 1 > /sys/module/process_reclaim/parameters/enable_process_reclaim
+        echo 50 > /sys/module/process_reclaim/parameters/pressure_min
+        echo 70 > /sys/module/process_reclaim/parameters/pressure_max
+        echo 30 > /sys/module/process_reclaim/parameters/swap_opt_eff
+        echo 0 > /sys/module/process_reclaim/parameters/per_swap_size
+        echo 7680 > /sys/module/process_reclaim/parameters/tsk_nomap_swap_sz
     fi
 
     # Set allocstall_threshold to 0 for all targets.
@@ -3869,13 +3861,12 @@ case "$target" in
     case "$soc_id" in
         "400" | "440" | "476" )
         # Core control parameters on silver
-        echo 0 0 0 0 0 0 > /sys/devices/system/cpu/cpu0/core_ctl/not_preferred
+        echo 0 0 0 0 1 1 > /sys/devices/system/cpu/cpu0/core_ctl/not_preferred
         echo 4 > /sys/devices/system/cpu/cpu0/core_ctl/min_cpus
         echo 60 > /sys/devices/system/cpu/cpu0/core_ctl/busy_up_thres
         echo 40 > /sys/devices/system/cpu/cpu0/core_ctl/busy_down_thres
         echo 8 > /sys/devices/system/cpu/cpu0/core_ctl/task_thres
         echo 100 > /sys/devices/system/cpu/cpu0/core_ctl/offline_delay_ms
-        echo 0 > /sys/devices/system/cpu/cpu0/core_ctl/enable
 
         # Disable Core control on gold, prime
         echo 0 > /sys/devices/system/cpu/cpu6/core_ctl/enable
@@ -4170,12 +4161,6 @@ case "$target" in
         # device/target specific folder
         setprop vendor.dcvs.prop 1
 
-        # moto add by yangbq2, set wsf value as 1
-        # Disable wsf for all targets beacause we are using efk.
-        # wsf Range : 1..1000 So set to bare minimum value 1.
-        echo 1 > /proc/sys/vm/watermark_scale_factor
-        # moto end
-
         # cpuset parameters
         echo 0-5 > /dev/cpuset/background/cpus
         echo 0-5 > /dev/cpuset/system-background/cpus
@@ -4185,14 +4170,6 @@ case "$target" in
 
         # Turn off sleep modes
         echo 0 > /sys/module/lpm_levels/parameters/sleep_disabled
-
-        # Log kernel wake-up source
-        echo 1 > /sys/module/msm_show_resume_irq/parameters/debug_mask
-
-	# Log kernel enabled clock before suspend
-	if [ -f /sys/kernel/debug/clk/debug_suspend ]; then
-	    echo 1 > /sys/kernel/debug/clk/debug_suspend
-	fi
       ;;
     esac
 esac
@@ -4312,9 +4289,6 @@ case "$target" in
 
             # Turn on sleep modes
             echo 0 > /sys/module/lpm_levels/parameters/sleep_disabled
-
-            # Log kernel wake-up source
-            echo 1 > /sys/module/msm_show_resume_irq/parameters/debug_mask
 
             ;;
         esac
@@ -4489,9 +4463,6 @@ case "$target" in
 
             # Disable low power modes. Enable it after LPM stable
             echo 0 > /sys/module/lpm_levels/parameters/sleep_disabled
-            # Log kernel wake-up source
-            echo 1 > /sys/module/msm_show_resume_irq/parameters/debug_mask
-            
             ;;
         esac
 
