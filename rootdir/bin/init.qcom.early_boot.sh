@@ -376,6 +376,7 @@ case "$target" in
                 ;;
             518|561|586)
                 setprop vendor.media.target.version 3
+                setprop vendor.media.target_variant "_khaje"
                 ;;
             585)
                 setprop vendor.media.target.version 4
