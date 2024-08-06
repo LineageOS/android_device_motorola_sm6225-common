@@ -1,0 +1,60 @@
+From 17ca75d7ee7ab65c88027cb21080be6bc55a11c3 Mon Sep 17 00:00:00 2001
+From: Vachounet <vachounet@live.fr>
+Date: Wed, 27 Jan 2021 23:28:48 +0100
+Subject: [PATCH 2/3] ImsConfigImpl: don't call setSubscriptionProperty for
+ wfc_ims_mdn
+
+---
+ smali/org/codeaurora/ims/ImsConfigImpl.smali | 36 --------------------
+ 1 file changed, 36 deletions(-)
+
+diff --git a/smali/org/codeaurora/ims/ImsConfigImpl.smali b/smali/org/codeaurora/ims/ImsConfigImpl.smali
+index b2ab653..cea9e43 100644
+--- a/smali/org/codeaurora/ims/ImsConfigImpl.smali
++++ b/smali/org/codeaurora/ims/ImsConfigImpl.smali
+@@ -2993,42 +2993,6 @@
+ 
+     .line 741
+     :cond_2
+-    if-ne p1, v2, :cond_3
+-
+-    .line 742
+-    new-instance v0, Ljava/lang/StringBuilder;
+-
+-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+-
+-    const-string v1, "setProvisionedStringValue WIFI_MDN set db value="
+-
+-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+-
+-    move-result-object v0
+-
+-    invoke-static {p2}, Lcom/qualcomm/ims/utils/Log;->pii(Ljava/lang/Object;)Ljava/lang/String;
+-
+-    move-result-object v1
+-
+-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+-
+-    move-result-object v0
+-
+-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+-
+-    move-result-object v0
+-
+-    invoke-static {p0, v0}, Lcom/qualcomm/ims/utils/Log;->i(Ljava/lang/Object;Ljava/lang/String;)V
+-
+-    .line 743
+-    iget v0, p0, Lorg/codeaurora/ims/ImsConfigImpl;->mSubId:I
+-
+-    const-string v1, "wfc_ims_mdn"
+-
+-    invoke-static {v0, v1, p2}, Landroid/telephony/SubscriptionManager;->setSubscriptionProperty(ILjava/lang/String;Ljava/lang/String;)V
+-
+-    .line 748
+-    :cond_3
+     const/16 v3, 0x2c
+ 
+     const/4 v5, 0x1
+-- 
+2.46.0
+

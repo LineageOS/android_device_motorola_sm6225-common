@@ -63,6 +63,9 @@ function blob_fixup() {
         system_ext/etc/permissions/moto-telephony.xml)
             sed -i "s#/system/#/system_ext/#" "${2}"
             ;;
+        system_ext/priv-app/ims/ims.apk)
+            apktool_patch "${2}" "$MY_DIR/ims-patches"
+            ;;
         vendor/etc/init/android.hardware.nfc@1.2-service-moto.rc)
             sed -i "s/class hal/override\n    class hal/" "${2}"
             ;;
