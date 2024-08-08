@@ -76,18 +76,10 @@ function blob_fixup() {
         vendor/etc/init/android.hardware.nfc@1.2-service.st-moto.rc)
             sed -i "s/class hal/override\n    class hal/" "${2}"
             ;;
-        vendor/lib64/camera/components/com.qti.node.gpu.so)
-            sed -i "s/camera.mot.is.coming.cts/vendor.camera.coming.cts/g" "${2}"
-            ;;
-        vendor/lib64/com.qti.feature2.gs.so)
-            sed -i "s/camera.mot.is.coming.cts/vendor.camera.coming.cts/g" "${2}"
-            ;;
-        vendor/lib64/com.qti.feature2.rt.so)
-            sed -i "s/camera.mot.is.coming.cts/vendor.camera.coming.cts/g" "${2}"
-            ;;
-        vendor/lib64/hw/camera.qcom.so)
-            sed -i "s/camera.mot.is.coming.cts/vendor.camera.coming.cts/g" "${2}"
-            ;;
+        vendor/lib64/camera/components/com.qti.node.gpu.so | \
+        vendor/lib64/com.qti.feature2.gs.so | \
+        vendor/lib64/com.qti.feature2.rt.so | \
+        vendor/lib64/hw/camera.qcom.so | \
         vendor/lib64/hw/com.qti.chi.override.so)
             sed -i "s/camera.mot.is.coming.cts/vendor.camera.coming.cts/g" "${2}"
             ;;
