@@ -59,6 +59,7 @@ vendor/lib/libbluetooth_audio_session_qti_2_1.so
 
 # Camera
 vendor/etc/init/android.hardware.camera.provider@2.4-service_64.rc:vendor/etc/init/android.hardware.camera.provider@2.4-service_64-qti.rc
+vendor/lib64/libofflinelog.so
 vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so
 
 # CDSP
