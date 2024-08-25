@@ -45,6 +45,7 @@ function lib_to_package_fixup_vendor_variants() {
             ;;
         libqsap_sdk | \
             libril | \
+            libthermalclient | \
             libwpa_client) ;;
         *)
             return 1
