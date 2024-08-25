@@ -59,7 +59,8 @@ vendor/lib/libbluetooth_audio_session_qti_2_1.so
 
 # Camera
 vendor/etc/init/android.hardware.camera.provider@2.4-service_64.rc:vendor/etc/init/android.hardware.camera.provider@2.4-service_64-qti.rc
-vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so
+# vendor.qti.hardware.camera.postproc@1.0-service-impl depends on libofflinelog, which is device specific
+vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so;DISABLE_CHECKELF
 
 # CDSP
 vendor/bin/cdsprpcd
@@ -479,7 +480,8 @@ vendor/lib/libperfconfig.so
 vendor/lib/libperfgluelayer.so
 vendor/lib/libperfioctl.so
 vendor/lib/libqti-perfd-client.so
-vendor/lib/libqti-perfd.so
+# libqti-perfd depends on libthermalclient, which is device specific
+vendor/lib/libqti-perfd.so;DISABLE_CHECKELF
 vendor/lib/libqti-util.so
 vendor/lib64/liblearningmodule.so
 vendor/lib64/libmeters.so
@@ -487,7 +489,8 @@ vendor/lib64/libperfconfig.so
 vendor/lib64/libperfgluelayer.so
 vendor/lib64/libperfioctl.so
 vendor/lib64/libqti-perfd-client.so
-vendor/lib64/libqti-perfd.so
+# libqti-perfd depends on libthermalclient, which is device specific
+vendor/lib64/libqti-perfd.so;DISABLE_CHECKELF
 vendor/lib64/libqti-util.so
 
 # Peripheral manager
