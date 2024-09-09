@@ -1,5 +1,12 @@
 # All unpinned blobs below are extracted from devon_g T2SNS33.73-22-3-7
 
+# Current blobs with ELF checks disabled:
+# libcne, libwqe, lowi-server, mutualex depend on libwpa_client, which is a gnu makefile target
+# libmdmcutback depends on libqsap_sdk, which is a gnu makefile target
+# libmotext_inf, libril-qcril-hook-oem depend on libril, which is a gnu makefile target
+# libqti-perfd depends on libthermalclient, which is device specific
+# vendor.qti.hardware.camera.postproc@1.0-service-impl depends on libofflinelog, which is device specific
+
 # ADSP
 vendor/bin/adsprpcd
 vendor/etc/init/vendor.qti.adsprpc-service.rc
@@ -59,7 +66,6 @@ vendor/lib/libbluetooth_audio_session_qti_2_1.so
 
 # Camera
 vendor/etc/init/android.hardware.camera.provider@2.4-service_64.rc:vendor/etc/init/android.hardware.camera.provider@2.4-service_64-qti.rc
-# vendor.qti.hardware.camera.postproc@1.0-service-impl depends on libofflinelog, which is device specific
 vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so;DISABLE_CHECKELF
 
 # CDSP
@@ -84,7 +90,6 @@ vendor/etc/init/vendor.qti.hardware.charger_monitor@1.0-service.rc
 # CNE
 vendor/app/CneApp/CneApp.apk;REQUIRED=CneApp.libvndfwk_detect_jni.qti_symlink
 vendor/bin/cnd
-# mutualex depends on libwpa_client, which is a gnu makefile target
 vendor/bin/mutualex;DISABLE_CHECKELF
 vendor/etc/cne/mwqem.conf
 vendor/etc/cne/profileMwqem.xml
@@ -118,12 +123,10 @@ vendor/etc/cne/wqeclient/VZW/VZW_profile6.xml
 vendor/etc/default-permissions/com.qualcomm.qti.cne.xml
 vendor/etc/init/cnd.rc
 vendor/etc/init/mutualex.rc
-# libcne depends on libwpa_client, which is a gnu makefile target
 vendor/lib64/libcne.so;DISABLE_CHECKELF
 vendor/lib64/libcneapiclient.so
 vendor/lib64/libcneoplookup.so
 vendor/lib64/libwms.so
-# libwqe depends on libwpa_client, which is a gnu makefile target
 vendor/lib64/libwqe.so;DISABLE_CHECKELF
 vendor/lib64/libxml.so
 vendor/lib64/vendor.qti.data.factory@2.0.so
@@ -199,7 +202,7 @@ system_ext/lib64/vendor.qti.diaghal@1.0.so
 system_ext/priv-app/dpmserviceapp/dpmserviceapp.apk
 vendor/bin/dpmQmiMgr
 vendor/etc/init/dpmQmiMgr.rc
-vendor/lib64/com.qualcomm.qti.dpm.api@1.0.so;MODULE=com.qualcomm.qti.dpm.api@1.0-vendor
+vendor/lib64/com.qualcomm.qti.dpm.api@1.0.so;MODULE_SUFFIX=-vendor
 vendor/lib64/libdpmqmihal.so
 
 # DRM
@@ -233,7 +236,7 @@ system_ext/lib64/fm_helium.so
 system_ext/lib64/libfm-hci.so
 system_ext/lib64/vendor.qti.hardware.fm@1.0.so
 vendor/lib64/hw/vendor.qti.hardware.fm@1.0-impl.so
-vendor/lib64/vendor.qti.hardware.fm@1.0.so;MODULE=vendor.qti.hardware.fm@1.0-vendor
+vendor/lib64/vendor.qti.hardware.fm@1.0.so;MODULE_SUFFIX=-vendor
 
 # Gatekeeper
 vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti
@@ -282,7 +285,6 @@ vendor/lib64/hw/vulkan.adreno.so
 
 # GNSS
 vendor/bin/loc_launcher
-# lowi-server depends on libwpa_client, which is a gnu makefile target
 vendor/bin/lowi-server;DISABLE_CHECKELF
 vendor/bin/xtra-daemon
 vendor/etc/vintf/manifest/vendor.qti.gnss@4.0-service.xml
@@ -391,7 +393,7 @@ vendor/lib64/vendor.qti.ims.rcsuce@1.0.so
 vendor/lib64/vendor.qti.ims.rcsuce@1.1.so
 vendor/lib64/vendor.qti.ims.rcsuce@1.2.so
 vendor/lib64/vendor.qti.imsrtpservice@3.0-service-Impl.so
-vendor/lib64/vendor.qti.imsrtpservice@3.0.so;MODULE=vendor.qti.imsrtpservice@3.0-vendor
+vendor/lib64/vendor.qti.imsrtpservice@3.0.so;MODULE_SUFFIX=-vendor
 
 # IO prefetcher
 vendor/bin/hw/vendor.qti.hardware.iop@2.0-service
@@ -480,7 +482,6 @@ vendor/lib/libperfconfig.so
 vendor/lib/libperfgluelayer.so
 vendor/lib/libperfioctl.so
 vendor/lib/libqti-perfd-client.so
-# libqti-perfd depends on libthermalclient, which is device specific
 vendor/lib/libqti-perfd.so;DISABLE_CHECKELF
 vendor/lib/libqti-util.so
 vendor/lib64/liblearningmodule.so
@@ -489,7 +490,6 @@ vendor/lib64/libperfconfig.so
 vendor/lib64/libperfgluelayer.so
 vendor/lib64/libperfioctl.so
 vendor/lib64/libqti-perfd-client.so
-# libqti-perfd depends on libthermalclient, which is device specific
 vendor/lib64/libqti-perfd.so;DISABLE_CHECKELF
 vendor/lib64/libqti-util.so
 
@@ -597,9 +597,7 @@ vendor/lib64/libconfigdb.so
 vendor/lib64/libdsi_netctrl.so
 vendor/lib64/liblog_vendor.so
 vendor/lib64/liblqe.so
-# libmdmcutback depends on libqsap_sdk, which is a gnu makefile target
 vendor/lib64/libmdmcutback.so;DISABLE_CHECKELF
-# libmotext_inf depends on libril, which is a gnu makefile target
 vendor/lib64/libmotext_inf.so;DISABLE_CHECKELF
 vendor/lib64/libnetmgr.so
 vendor/lib64/libnetmgr_common.so
@@ -619,7 +617,6 @@ vendor/lib64/libril-qc-hal-qmi.so
 vendor/lib64/libril-qc-logger.so
 vendor/lib64/libril-qc-ltedirectdisc.so
 vendor/lib64/libril-qc-radioconfig.so
-# libril-qcril-hook-oem depends on libril, which is a gnu makefile target
 vendor/lib64/libril-qcril-hook-oem.so;DISABLE_CHECKELF
 vendor/lib64/librilqmiservices.so
 vendor/lib64/libsystem_health_mon.so
