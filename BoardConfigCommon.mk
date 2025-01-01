@@ -35,12 +35,6 @@ BOARD_USES_ALSA_AUDIO := true
 # Bootloader
 TARGET_NO_BOOTLOADER := true
 
-# Display
-TARGET_USES_DISPLAY_RENDER_INTENTS := true
-TARGET_USES_GRALLOC4 := true
-TARGET_USES_HWC2 := true
-TARGET_USES_ION := true
-
 # Filesystem
 TARGET_FS_CONFIG_GEN := \
     $(COMMON_PATH)/config.fs \
@@ -117,6 +111,9 @@ TARGET_MODULE_ALIASES += \
 # Kernel Modules - WLAN
 TARGET_MODULE_ALIASES += \
     wlan.ko:qca_cld3_wlan.ko
+
+# Media
+TARGET_USES_ION := true
 
 # Partitions
 -include vendor/lineage/config/BoardConfigReservedSize.mk

@@ -124,14 +124,13 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.graphics.mapper@3.0-impl-qti-display \
     android.hardware.graphics.mapper@4.0-impl-qti-display \
+    android.hardware.renderscript@1.0-impl \
     vendor.qti.hardware.display.allocator-service \
     vendor.qti.hardware.display.composer-service \
     vendor.qti.hardware.memtrack-service
 
 PRODUCT_PACKAGES += \
-    gralloc.bengal
-
-PRODUCT_PACKAGES += \
+    init.qti.display_boot.rc \
     init.qti.display_boot.sh
 
 # DRM
