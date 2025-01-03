@@ -16,6 +16,24 @@
       "message": "I didn\u0027t test with a build FYI, but instead with `adb shell setprop`",
       "revId": "bd7cb886b3caf74e2146c1e5b260f4e11c45c78a",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "917597ac_812fb9d9",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 33572
+      },
+      "writtenOn": "2025-01-03T13:33:21Z",
+      "side": 1,
+      "message": "I tested both with my carrier that does 464XLAT, and another that doesn\u0027t, but instead does dual stack with CGNAT.\n\nWorked as expected on both, no CLAT on dual stack, and CLAT on the NAT64 setup of Vivo BR.",
+      "parentUuid": "d6a680ec_4785a04e",
+      "revId": "bd7cb886b3caf74e2146c1e5b260f4e11c45c78a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
