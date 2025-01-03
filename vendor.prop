@@ -238,3 +238,6 @@ ro.vendor.zram.swapon=true
 
 # Zygote
 zygote.critical_window.minute=10
+
+# CLAT
+persist.vendor.net.doxlat=true
