@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "76f6e015_663a683c",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2025-01-03T22:30:35Z",
+      "side": 1,
+      "message": "From what I see, qcril blobs sets this prop.\nIf modem supports xlat, then it sets the prop to false, else true (so it\u0027s done in userspace instead of modem).\n\nSo setting this prop means something else is broken in blobs or modem and we are working around it, also not sure if setting it here will override whatever the blobs set.",
+      "revId": "f03ddd68abe8357d1d9fcf40a1c34114eaf257c6",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
