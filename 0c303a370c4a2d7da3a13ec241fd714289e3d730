@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "dbe68b0a_44a40bb8",
+        "filename": "audio/audio_io_policy.conf",
+        "patchSetId": 1
+      },
+      "lineNbr": 89,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2025-01-13T00:04:53Z",
+      "side": 0,
+      "message": "Is this part necessary?",
+      "range": {
+        "startLine": 89,
+        "startChar": 19,
+        "endLine": 89,
+        "endChar": 73
+      },
+      "revId": "0c303a370c4a2d7da3a13ec241fd714289e3d730",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "826a3f61_64241a6f",
+        "filename": "audio/audio_io_policy.conf",
+        "patchSetId": 1
+      },
+      "lineNbr": 125,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2025-01-13T00:04:53Z",
+      "side": 0,
+      "message": "Shouldn\u0027t this be removed as well?",
+      "range": {
+        "startLine": 112,
+        "startChar": 0,
+        "endLine": 125,
+        "endChar": 3
+      },
+      "revId": "0c303a370c4a2d7da3a13ec241fd714289e3d730",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
