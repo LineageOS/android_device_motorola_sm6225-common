@@ -11,6 +11,9 @@ ro.lmk.psi_complete_stall_ms=120
 ro.lmk.psi_partial_stall_ms=50
 ro.lmk.filecache_min_kb=300000
 
+# Motorola
+ro.mot.build.customerid=global
+
 # System server
 arm64.memtag.process.system_server=off
 
