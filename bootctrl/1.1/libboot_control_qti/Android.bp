@@ -9,7 +9,7 @@ cc_library {
     recovery_available: true,
     shared_libs: [
         "android.hardware.boot@1.1",
-        "librecovery_updater.moto_bengal",
+        "libgptutils.moto_bengal",
         "libbase",
         "libcutils",
         "liblog",

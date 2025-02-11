@@ -1,10 +1,10 @@
 //
-// SPDX-FileCopyrightText: 2016-2024 The Linux Foundation
-// SPDX-License-Identifier: BSD-3-Clause
+// SPDX-FileCopyrightText: 2020 The Android Open Source Project
+// SPDX-License-Identifier: Apache-2.0
 //
 
 cc_library {
-    name: "librecovery_updater.moto_bengal",
+    name: "libgptutils.moto_bengal",
     vendor: true,
     recovery_available: true,
     shared_libs: [
@@ -21,6 +21,8 @@ cc_library {
         "recovery-ufs-bsg.cpp",
     ],
     owner: "qti",
-    header_libs: ["generated_kernel_headers"],
+    header_libs: [
+        "generated_kernel_headers",
+    ],
     export_include_dirs: ["."],
 }
