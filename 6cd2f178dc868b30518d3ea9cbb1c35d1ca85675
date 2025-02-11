@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "a27238d4_c6cfc789",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2025-02-11T12:22:58Z",
+      "side": 1,
+      "message": "BRICK DANGER: This is not tested yet, only pick this along with https://review.lineageos.org/c/LineageOS/android_hardware_qcom_bootctrl/+/415446",
+      "revId": "6cd2f178dc868b30518d3ea9cbb1c35d1ca85675",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
