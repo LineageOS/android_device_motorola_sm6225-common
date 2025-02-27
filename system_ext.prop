@@ -2,6 +2,9 @@
 persist.vendor.cne.feature=1
 persist.vendor.cne.logging.qxdm=3974
 
+# Display
+sys.brightness.disable_gamma_conversion=true
+
 # DPM
 persist.vendor.dpm.feature=11
 
