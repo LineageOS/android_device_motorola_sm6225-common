@@ -6,10 +6,12 @@
 <resources>
     <!-- Default files to pin via Pinner Service -->
     <string-array name="config_defaultPinnerServiceFiles" translatable="false">
-        <item>/apex/com.android.art/javalib/core-oj.jar</item>
-        <item>/apex/com.android.art/javalib/core-libart.jar</item>
-        <item>/apex/com.android.media/javalib/updatable-media.jar</item>
-        <item>/system/bin/surfaceflinger</item>
+        <item>"/apex/com.android.art/javalib/core-oj.jar"</item>
+        <item>"/apex/com.android.art/javalib/core-libart.jar"</item>
+        <item>"/system/framework/framework.jar"</item>
+        <item>"/system/framework/services.jar"</item>
+        <item>"/system/bin/surfaceflinger"</item>
+        <item>"/system_ext/priv-app/SystemUI/SystemUI.apk"</item>
     </string-array>
 
     <!-- Default: 60 MB. Bytes that the PinnerService will pin for Home app -->
