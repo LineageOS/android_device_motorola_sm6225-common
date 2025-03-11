@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "3fbe9b01_c3129a11",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2025-03-11T03:57:46Z",
+      "side": 1,
+      "message": "remove it from bengal.mk? If you\u0027re not disabling checks, it will been devs in vendor",
+      "revId": "6397370ac270a451377ce878b10d3fe87ff4efc6",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
