@@ -1,2 +1,0 @@
-# Allow hal_audio_default to access sensor service
-allow hal_audio_default fwk_sensor_hwservice:hwservice_manager find;
