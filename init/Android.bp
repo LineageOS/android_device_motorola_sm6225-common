@@ -25,13 +25,6 @@ prebuilt_etc {
 }
 
 prebuilt_etc {
-    name: "init.mmi.debug.rc",
-    src: "init.mmi.debug.rc",
-    sub_dir: "init/hw",
-    vendor: true,
-}
-
-prebuilt_etc {
     name: "init.mmi.rc",
     src: "init.mmi.rc",
     sub_dir: "init/hw",
