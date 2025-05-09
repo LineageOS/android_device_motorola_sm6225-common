@@ -432,7 +432,6 @@ vendor/lib64/libminksocket.so
 
 # OEM
 vendor/bin/motobox;SYMLINK=vendor/bin/expat
-vendor/etc/vhw.xml
 
 # PASR manager
 vendor/lib/vendor.qti.memory.pasrmanager@1.0.so
@@ -746,6 +745,3 @@ vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.3-service.widevine.xml
 vendor/lib64/liboemcrypto.so
 vendor/lib64/libtrustedapploader.so
 vendor/lib64/libwvhidl.so
-
-# WiFi
-vendor/bin/cnss-daemon
