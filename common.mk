@@ -249,6 +249,7 @@ PRODUCT_PACKAGES += \
     NcmTetheringOverlay \
     SettingsProviderResCommon \
     SystemUIResCommon \
+    TelephonyResCommon \
     TelephonyResProduct \
     WifiResCommon
 
