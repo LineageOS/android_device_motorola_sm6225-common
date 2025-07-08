@@ -1,6 +1,9 @@
 # App freezer
 ro.config.use_freezer=false
 
+# eBPF
+ro.bpf.kver_override=5.10.223
+
 # LMKD
 ro.lmk.kill_heaviest_task=true
 ro.lmk.swap_util_max=90
