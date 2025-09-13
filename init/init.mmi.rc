@@ -345,6 +345,13 @@ service vendor.hal-fps-sh /vendor/bin/init.oem.fingerprint2.sh
     group system
     oneshot
 
+service chipone_ident /vendor/bin/hw/chipone_ident
+    class late_start
+    user system
+    group system
+    oneshot
+    disabled
+
 service fpc_ident /vendor/bin/hw/fpc_ident
     class late_start
     user system
