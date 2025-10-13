@@ -238,12 +238,18 @@ PRODUCT_PACKAGES += \
 
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay \
     $(LOCAL_PATH)/overlay-lineage
 
 PRODUCT_ENFORCE_RRO_TARGETS := *
+
 PRODUCT_PACKAGES += \
-    NcmTetheringOverlay
+    FrameworksResCommon \
+    FrameworksResProduct \
+    FrameworksResTarget \
+    NcmTetheringOverlay \
+    SystemUIResCommon \
+    TelephonyResProduct \
+    WifiResCommon
 
 # Partitions
 PRODUCT_PACKAGES += \
@@ -367,9 +373,6 @@ PRODUCT_PACKAGES += \
     libwifi-hal-qcom \
     wpa_supplicant \
     wpa_supplicant.conf
-
-PRODUCT_PACKAGES += \
-    WifiResCommonOverlay
 
 # WiFi firmware symlinks
 PRODUCT_PACKAGES += \

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     SPDX-FileCopyrightText: The LineageOS Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources>
+    <!-- Vibrator pattern for camera gesture launch. -->
+    <integer-array name="config_cameraLaunchGestureVibePattern">
+        <item>0</item>
+        <item>150</item>
+    </integer-array>
+</resources>
