@@ -224,9 +224,6 @@ PRODUCT_PACKAGES += \
     Tag
 
 # Overlay
-DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay-lineage
-
 PRODUCT_ENFORCE_RRO_TARGETS := *
 
 PRODUCT_PACKAGES += \
@@ -234,6 +231,7 @@ PRODUCT_PACKAGES += \
     FrameworksResProduct \
     FrameworksResTarget \
     LineageApertureAppCommon \
+    LineageSdkOverlayCommon \
     NcmTetheringOverlay \
     SettingsProviderResCommon \
     SystemUIResCommon \
